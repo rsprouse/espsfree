@@ -1,0 +1,12 @@
+Source: espsfree-dev
+Maintainer: Ronald L. Sprouse <ronald@berkeley.edu>
+Priority: optional
+Build-Depends: debhelper (>= 9)
+
+
+Package: espsfree-dev
+Architecture: any
+Depends: ${shlib:Depends}, ${misc:Depends}
+Description: esps emake utility
+  The esps emake utility creates a customized environment for invoking make
+  which is suitable for compiling esps programs.
