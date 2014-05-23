@@ -10,4 +10,4 @@ subdirs := bhd btosps copysps fea2esig fea_deriv feafunc get_esps_base \
 all: $(subdirs)
 
 $(subdirs):
-        $(MAKE) -C $@ all
+	$(MAKE) -C $@ all

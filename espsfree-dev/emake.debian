@@ -9,7 +9,7 @@ exec make \
 LDEMULATION=elf_i386 \
 SPSDIR=$BUILDSPS \
 BINDIR=/usr/bin \
-MANDIR=$BUILDSPS/man \
+MANDIR=/usr/share/man \
 LIBDIR=/usr/lib/espsfree \
 PARAMDIR=/usr/lib/espsfree/params \
 WAVESDIR=$BUILDSPS/lib/waves \
