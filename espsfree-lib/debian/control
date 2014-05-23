@@ -1,7 +1,7 @@
 Source: espsfree-lib
 Maintainer: Ronald L. Sprouse <ronald@berkeley.edu>
 Priority: optional
-Build-Depends: debhelper (>= 9), build-essential, byacc, flex, espsfree-dev, espsfree-lib-dev
+Build-Depends: debhelper (>= 9), build-essential, byacc, flex, espsfree-dev
 
 
 Package: espsfree-lib
