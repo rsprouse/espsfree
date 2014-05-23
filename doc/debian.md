@@ -40,3 +40,11 @@ instead.
 - Running `debuild` in espsfree-lib installs *.a files to /usr/lib/espsfree
 directly and they do not end up in the .deb. These files should install to
 the debian fake directory structure.
+
+- Running `debuild` in espsfree-util installs binary files to /usr/bin
+directly and they do not end up in the .deb. These files should install to
+the debian fake directory structure.
+
+- The fea2esig command in espsfree-util will not compile. This needs to be
+fixed and compilation needs to be re-enabled in the espsfree-util makefile.
+
