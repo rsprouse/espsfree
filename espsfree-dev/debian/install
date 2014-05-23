@@ -36,3 +36,10 @@ types.h usr/include/espsfree
 unix.h usr/include/espsfree
 vq.h usr/include/espsfree
 window.h usr/include/espsfree
+Methods.h usr/include/espsfree
+Objects.h usr/include/espsfree
+reticle.h usr/include/espsfree
+Signals.h usr/include/espsfree
+spectrogram.h usr/include/espsfree
+Utils.h usr/include/espsfree
+w_lengths.h usr/include/espsfree
