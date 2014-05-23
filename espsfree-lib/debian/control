@@ -7,4 +7,4 @@ Build-Depends: debhelper (>= 9), build-essential, byacc, flex, espsfree-dev, esp
 Package: espsfree-lib
 Architecture: any
 Depends: ${shlib:Depends}, ${misc:Depends}
-Description: Header files needed to compile espsfree-lib package.
+Description: ESPS library files.
