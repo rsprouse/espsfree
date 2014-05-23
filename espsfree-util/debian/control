@@ -1,0 +1,10 @@
+Source: espsfree-util
+Maintainer: Ronald L. Sprouse <ronald@berkeley.edu>
+Priority: optional
+Build-Depends: debhelper (>= 9), build-essential, espsfree-dev
+
+
+Package: espsfree-util
+Architecture: any
+Depends: ${shlib:Depends}, ${misc:Depends}
+Description: Utility commands for ESPS.
