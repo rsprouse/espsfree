@@ -1,7 +1,11 @@
 
 MAKE = emake
+#fea2esig 
+subdirs := bhd btosps copysps fea_deriv feafunc get_esps_base \
+           getparam hditem mergefea misc nodiff pplain psps stats testsd \
+           tofeasd
 
-subdirs := bhd btosps copysps fea2esig fea_deriv feafunc get_esps_base \
+isubdirs := bhd btosps copysps fea_deriv feafunc get_esps_base \
            getparam hditem mergefea misc nodiff pplain psps stats testsd \
            tofeasd
 
@@ -11,3 +15,10 @@ all: $(subdirs)
 
 $(subdirs):
 	$(MAKE) -C $@
+
+.PHONY: install $(isubdirs)
+
+install: $(isubdirs)
+
+$(isubdirs):
+	$(MAKE) -C $@ install
