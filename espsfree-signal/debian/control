@@ -1,0 +1,10 @@
+Source: espsfree-signal
+Maintainer: Ronald L. Sprouse <ronald@berkeley.edu>
+Priority: optional
+Build-Depends: debhelper (>= 9), build-essential, espsfree-dev, espsfree-lib
+
+
+Package: espsfree-signal
+Architecture: any
+Depends: ${shlib:Depends}, ${misc:Depends}, espsfree-lib
+Description: ESPS signal processing and speech analysis commands.
