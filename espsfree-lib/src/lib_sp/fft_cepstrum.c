@@ -27,8 +27,8 @@ static char *sccs_id = "@(#)fft_cepstrum.c	1.7	5/31/95	ESI/ERL";
 
 #include <stdio.h>
 #include <math.h>
-#include <esps/esps.h>
-#include <esps/constants.h>
+#include <espsfree/esps.h>
+#include <espsfree/constants.h>
 
 void get_cfft();
 void get_cfft_inv();

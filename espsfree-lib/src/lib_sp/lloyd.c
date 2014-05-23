@@ -21,7 +21,7 @@
 #define HUGE 1.0e37
 #define MAXEMPTY 10
 #include <stdio.h>
-#include <esps/esps.h>
+#include <espsfree/esps.h>
 #include <assert.h>
 #define Fprintf (void)fprintf
 #ifndef DEC_ALPHA

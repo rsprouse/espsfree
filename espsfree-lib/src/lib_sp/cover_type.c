@@ -21,7 +21,7 @@
 #endif
 
 #include <stdio.h>
-#include <esps/esps.h>
+#include <espsfree/esps.h>
 
 short
   cover_type(t1, t2)

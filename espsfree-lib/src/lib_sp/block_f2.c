@@ -21,11 +21,11 @@
 static char *sccs_id = "@(#)block_f2.c	1.3	9/12/96	ERL";
 
 #include <stdio.h>
-#include <esps/unix.h>
-#include <esps/esps.h>
-#include <esps/fea.h>
-#include <esps/feafilt.h>
-#include <esps/feasd.h>
+#include <espsfree/unix.h>
+#include <espsfree/esps.h>
+#include <espsfree/fea.h>
+#include <espsfree/feafilt.h>
+#include <espsfree/feasd.h>
 
 extern int debug_level;
 

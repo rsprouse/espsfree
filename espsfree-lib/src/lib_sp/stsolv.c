@@ -24,8 +24,8 @@ static char *sccs_id = "@(#)stsolv.c	1.1	6/20/88	ESI";
 #endif
 
 #include <stdio.h>
-#include <esps/esps.h>
-#include <esps/unix.h>
+#include <espsfree/esps.h>
+#include <espsfree/unix.h>
 
 /* 
  * stsolv

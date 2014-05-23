@@ -21,9 +21,9 @@
 static char *sccs_id = "@(#)block_futil.c	1.8	9/12/96	ERL";
 
 #include <stdio.h>
-#include <esps/unix.h>
-#include <esps/esps.h>
-#include <esps/feafilt.h>
+#include <espsfree/unix.h>
+#include <espsfree/esps.h>
+#include <espsfree/feafilt.h>
 
 extern int debug_level;
 char *arr_alloc();

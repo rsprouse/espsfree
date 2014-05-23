@@ -29,8 +29,8 @@ static char *sccs_id = "@(#)getdct.c	1.3	10/11/89 ESI";
  *  SPS include files.
  */
 
-#include <esps/esps.h>
-#include <esps/constants.h>
+#include <espsfree/esps.h>
+#include <espsfree/constants.h>
 
 /*
  *  Defines.

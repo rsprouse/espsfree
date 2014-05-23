@@ -48,10 +48,10 @@ void free();
 /*
  * ESPS Include Files
  */
-#include <esps/esps.h>
-#include <esps/fea.h>    /*to define data_rec*/
-#include <esps/anafea.h> /*only need this parameter type definition*/
-#include <esps/spsassert.h>
+#include <espsfree/esps.h>
+#include <espsfree/fea.h>    /*to define data_rec*/
+#include <espsfree/anafea.h> /*only need this parameter type definition*/
+#include <espsfree/spsassert.h>
 
 /*
  * ESPS Functions

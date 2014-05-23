@@ -22,15 +22,15 @@ static char *sccs_id = "@(#)arr_op.c	1.2	12/1/93	ERL";
 
 #include <stdio.h>
 #include <math.h>
-#include <esps/esps.h>
-#include <esps/func.h>
-#include <esps/op.h>
+#include <espsfree/esps.h>
+#include <espsfree/func.h>
+#include <espsfree/op.h>
 
 extern char *type_convert();
 extern void warn_on_clip();
 extern char *arr_func();
 
-/* Keep following strings consistent with symbols in esps/op.h. */
+/* Keep following strings consistent with symbols in espsfree/op.h. */
 
 char *operation_names[] = {
      "ADD",

@@ -36,7 +36,7 @@
  */
 
 #include <stdio.h>
-#include <esps/esps.h>
+#include <espsfree/esps.h>
 
 #ifndef lint
 static char *sccs_id = "@(#)auto_pefrc.c	1.4 11/19/87 ESI";

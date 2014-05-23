@@ -16,7 +16,7 @@
 
 #define modified_burg 'm'
 #include <stdio.h>
-#include <esps/esps.h>
+#include <espsfree/esps.h>
 
 void
 get_burg (x, lnt, r, order, c, rc, pgain, method)

@@ -33,7 +33,7 @@
 static char *sccs_id = "@(#)bestauto.c	1.9	10/19/93	ESI/ERL";
 
 #include <stdio.h>
-#include <esps/esps.h>
+#include <espsfree/esps.h>
 
 #ifndef DEC_ALPHA
 char   *malloc ();

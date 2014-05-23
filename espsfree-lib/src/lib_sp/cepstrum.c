@@ -35,7 +35,7 @@ linear predictive coeffcients. The two functions are
  **************************************************************************/
 #include <stdio.h>
 #include <math.h>
-#include <esps/esps.h>
+#include <espsfree/esps.h>
 
 #ifndef lint
 static char *sccs_id = "@(#)cepstrum.c	1.7 1/26/88 ESI";

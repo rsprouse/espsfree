@@ -25,7 +25,7 @@ static char *sccs_id = "@(#)rand_intnr.c	1.5	1/4/96 ESI";
 #define BIGRAND 2147483647.0	/*maximum value returned by random()*/
 
 #include <stdio.h>
-#include <esps/esps.h>
+#include <espsfree/esps.h>
 /*
  * system functions and variables
  */

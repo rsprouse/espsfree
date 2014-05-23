@@ -14,9 +14,9 @@
  * This function designs a full-search vector quantization codebook
 */
 #include <stdio.h>
-#include <esps/esps.h>
-#include <esps/fea.h>
-#include <esps/vq.h>
+#include <espsfree/esps.h>
+#include <espsfree/fea.h>
+#include <espsfree/vq.h>
 #ifndef lint
 static char *sccs_id = "@(#)vqdesign.c	1.15	11/14/96 ESI";
 #endif

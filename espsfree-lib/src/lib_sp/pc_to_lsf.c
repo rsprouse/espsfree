@@ -25,8 +25,8 @@ static char *sccs_id = "@(#)pc_to_lsf.c	1.18 9/18/96 ESI";
 */
 #include <stdio.h>
 #include <math.h>
-#include <esps/esps.h>
-#include <esps/unix.h>
+#include <espsfree/esps.h>
+#include <espsfree/unix.h>
 
 
 #ifndef FLT_MIN

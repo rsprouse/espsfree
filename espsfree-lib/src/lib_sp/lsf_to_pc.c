@@ -32,8 +32,8 @@ Checked by Alan Parker
 
 #include <stdio.h>
 #include <math.h>
-#include <esps/unix.h>
-#include <esps/esps.h>
+#include <espsfree/unix.h>
+#include <espsfree/esps.h>
 
 /* local defines*/
 

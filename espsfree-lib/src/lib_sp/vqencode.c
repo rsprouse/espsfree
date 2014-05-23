@@ -22,7 +22,7 @@ static char *sccs_id = "@(#)vqencode.c	1.6	8/11/91 EPI";
 
 #include <stdio.h>
 #include <assert.h>
-#include <esps/esps.h>
+#include <espsfree/esps.h>
 #define BIGDIST 1E20
 
 long

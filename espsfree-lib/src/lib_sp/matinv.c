@@ -31,7 +31,7 @@
 #endif
 
 #include <stdio.h>
-#include <esps/esps.h>
+#include <espsfree/esps.h>
 
 #define ABS(x) (((x) < 0) ? -(x) : (x))
 #define LARGE_COND_F 1000000.0

@@ -23,8 +23,8 @@
  */
 
 #include <stdio.h>
-#include <esps/esps.h>
-#include <esps/unix.h>
+#include <espsfree/esps.h>
+#include <espsfree/unix.h>
 
 #ifndef lint
 static char *sccs_id = "@(#)getfft.c	1.11 2/3/92 ESI";

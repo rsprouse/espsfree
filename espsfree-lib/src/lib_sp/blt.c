@@ -18,7 +18,7 @@ static      char *sccs_id = "@(#)blt.c	1.5         1/22/93 ESI";
 
 #include <math.h>
 #include <stdio.h>
-#include <esps/esps.h>
+#include <espsfree/esps.h>
 
 void stage1_d();
 void stage2_d();

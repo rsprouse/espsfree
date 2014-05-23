@@ -39,7 +39,7 @@ void exit(), free();
 static void rc_to_c ();
 
 #include <stdio.h>
-#include <esps/esps.h>
+#include <espsfree/esps.h>
 
 void get_vburg (x, lnt, r, order, c, rc, pgain, matsiz)
 float   x[], c[], rc[], *pgain;

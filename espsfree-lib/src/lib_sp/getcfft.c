@@ -21,8 +21,8 @@
  */
 
 #include <stdio.h>
-#include <esps/esps.h>
-#include <esps/unix.h>
+#include <espsfree/esps.h>
+#include <espsfree/unix.h>
 
 #ifndef lint
 static char *sccs_id = "@(#)getcfft.c	1.2 10/19/90 ESI";

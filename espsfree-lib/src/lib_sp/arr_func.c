@@ -22,9 +22,9 @@ static char *sccs_id = "@(#)arr_func.c	1.6	6/28/93	ERL";
 
 #include <stdio.h>
 #include <math.h>
-#include <esps/esps.h>
-#include <esps/func.h>
-#include <esps/constants.h>
+#include <espsfree/esps.h>
+#include <espsfree/func.h>
+#include <espsfree/constants.h>
 
 #define HYPOT_AVAILABLE
 
@@ -89,7 +89,7 @@ atanh(x)
 #define LOG10_E 0.43429448190325182765
 #define LOGE_10 2.30258509299404568402
 
-/* Keep following strings consistent with symbols in esps/func.h. */
+/* Keep following strings consistent with symbols in espsfree/func.h. */
 
 char *function_types[] = {
      "NONE",

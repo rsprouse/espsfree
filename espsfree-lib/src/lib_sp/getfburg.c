@@ -34,7 +34,7 @@ static char *sccs_id = "@(#)getfburg.c	1.2	10/19/93	ESI/ERL";
 
 void exit(), free();
 #include <stdio.h>
-#include <esps/esps.h>
+#include <espsfree/esps.h>
 void get_fburg (x, lnt, a, order, rc, pgain)
 float   x[], a[], rc[], *pgain;
 int     lnt, order;

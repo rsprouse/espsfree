@@ -15,7 +15,7 @@ static char *sccs_id = "@(#)getauto.c	1.6 2/20/96 ESI";
 #endif
 
 #include <stdio.h>
-#include <esps/esps.h>
+#include <espsfree/esps.h>
 
 void
 get_auto(x, lnt, r, order)

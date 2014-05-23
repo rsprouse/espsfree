@@ -28,13 +28,13 @@ static char *sccs_id = "@(#)fil_spectrum.c	1.2	12/21/92	ERL";
 #define BIG 1.0e+30
 
 #include <math.h>
-#include <esps/esps.h>
-#include <esps/fea.h>
-#include <esps/feaspec.h>
-#include <esps/feafilt.h>
-#include <esps/unix.h>
-#include <esps/constants.h>
-#include <esps/spsassert.h>
+#include <espsfree/esps.h>
+#include <espsfree/fea.h>
+#include <espsfree/feaspec.h>
+#include <espsfree/feafilt.h>
+#include <espsfree/unix.h>
+#include <espsfree/constants.h>
+#include <espsfree/spsassert.h>
 
 double sqrt();
 extern int debug_level;

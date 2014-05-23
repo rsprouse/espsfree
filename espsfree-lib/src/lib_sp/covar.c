@@ -22,7 +22,7 @@
 static char *sccs_id = "@(#)covar.c	1.10	10/19/93	ESI/ERL";
 
 #include <stdio.h>
-#include <esps/esps.h>
+#include <espsfree/esps.h>
 
 void free();
 

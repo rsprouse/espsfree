@@ -42,7 +42,7 @@
 #endif
 
 #include <stdio.h>
-#include <esps/esps.h>
+#include <espsfree/esps.h>
 #include <math.h>
 
 char	*arr_alloc();

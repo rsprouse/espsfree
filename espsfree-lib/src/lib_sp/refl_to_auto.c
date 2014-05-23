@@ -30,7 +30,7 @@
 
 #include  <stdio.h>
 #include  <math.h>
-#include  <esps/esps.h>
+#include  <espsfree/esps.h>
 #define	  SQUARE(x)	(x) * (x)
 
 

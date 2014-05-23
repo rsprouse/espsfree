@@ -20,8 +20,8 @@
 
 static char *sccs_id = "@(#)lp_procs.c	1.6	11/11/96	ERL";
 
-#include <esps/esps.h>
-#include <esps/lpsyn.h>
+#include <espsfree/esps.h>
+#include <espsfree/lpsyn.h>
 
 /*************************************************************************/
 LP_frame *new_lp_frame()

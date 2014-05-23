@@ -21,10 +21,10 @@
 static char *sccs_id = "@(#)compute_rc.c	1.10	8/12/91	ERL";
 
 #include <stdio.h>
-#include <esps/esps.h>
-#include <esps/unix.h>
-#include <esps/window.h>
-#include <esps/ana_methods.h>
+#include <espsfree/esps.h>
+#include <espsfree/unix.h>
+#include <espsfree/window.h>
+#include <espsfree/ana_methods.h>
 
 extern int debug_level;
 

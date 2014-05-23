@@ -38,8 +38,8 @@ Written by: Bernard G. Fraenkel; csqrt and ESPS modification by D. Burton
 
 #include <math.h>
 #include <stdio.h>
-#include <esps/esps.h>
-#include <esps/complex.h>
+#include <espsfree/esps.h>
+#include <espsfree/complex.h>
 
 
 /* ------------------------------------------------------------------------- */

@@ -27,16 +27,16 @@ static char *sccs_id = "@(#)window.c	1.13	24 Mar 1997	ESI/ERL";
 
 #include <math.h>
 
-#include <esps/esps.h>
-#include <esps/unix.h>
-#include <esps/window.h>
-#include <esps/strlist.h>
-#include <esps/constants.h>
+#include <espsfree/esps.h>
+#include <espsfree/unix.h>
+#include <espsfree/window.h>
+#include <espsfree/strlist.h>
+#include <espsfree/constants.h>
 
 /*
  * Add new strings at the end of this list (just before the NULL),
  * and don't change the order of the existing strings.
- * Keep the list of constant symbols in <esps/window.h> consistent
+ * Keep the list of constant symbols in <espsfree/window.h> consistent
  * with this list.
  */
 

@@ -24,8 +24,8 @@ static char *sccs_id = "@(#)classify.c	1.4 10/19/93 EPI";
 #endif
 
 #include <stdio.h>
-#include <esps/esps.h>
-#include <esps/constants.h>
+#include <espsfree/esps.h>
+#include <espsfree/constants.h>
 
 
 double  exp(), sqrt();

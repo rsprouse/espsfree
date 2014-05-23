@@ -29,9 +29,9 @@
 /*
  * sps include files
 */
-#include <esps/esps.h>
-#include <esps/fea.h>    /*to define data_rec*/ 
-#include <esps/anafea.h> /*only need this for input_type*/
+#include <espsfree/esps.h>
+#include <espsfree/fea.h>    /*to define data_rec*/ 
+#include <espsfree/anafea.h> /*only need this for input_type*/
 
 /*
  * defines

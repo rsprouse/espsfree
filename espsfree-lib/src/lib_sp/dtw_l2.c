@@ -19,8 +19,8 @@
 #endif
 
 #include <stdio.h>
-#include <esps/limits.h>
-#include <esps/spsassert.h>
+#include <espsfree/limits.h>
+#include <espsfree/spsassert.h>
 
 #define PROG "dtw_l2"
 #define Fprintf (void)fprintf
