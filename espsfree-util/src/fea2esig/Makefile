@@ -24,7 +24,7 @@ PROG = fea2esig
 SRC = fea2esig.c
 MAN = fea2esig.1
 
-ESIGBASE = ../lib_header/esignal
+#ESIGBASE = ../lib_header/esignal
 
 # LIBS doesn't need an explicit "libesignal.a"
 # because it's contained in libheader.a.
@@ -32,8 +32,8 @@ LIBS = $(SPSLIB)
 
 prog: $(PROG)
 
-$(PROG): $(SRC) $(LIBS) $(SINC)/esps.h $(SINC)/fea.h $(ESIGBASE)/src/esignal.h
-	$(ANSI_CC) $(CFLAGS) -I$(ESIGBASE)/src $(SRC) $(LIBS) -lm -o $(PROG)
+$(PROG): $(SRC) $(LIBS) $(SINC)/esps.h $(SINC)/fea.h $(SINC)/esignal.h
+	$(ANSI_CC) $(CFLAGS) -I$(SINC) $(SRC) $(LIBS) -lm -o $(PROG)
 
 install: prog
 	-rm -f $(BINDIR)/$(PROG)
