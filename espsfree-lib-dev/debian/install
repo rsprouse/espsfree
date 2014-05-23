@@ -4,6 +4,7 @@ array.h usr/include/espsfree
 complex.h usr/include/espsfree
 constants.h usr/include/espsfree
 epaths.h usr/include/espsfree
+esignal.h usr/include/espsfree
 esignal_fea.h usr/include/espsfree
 esps.h usr/include/espsfree
 feadst.h usr/include/espsfree
