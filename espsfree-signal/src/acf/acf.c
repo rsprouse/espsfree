@@ -24,14 +24,14 @@
 static char *sccs_id = "@(#)acf.c	1.12	1/21/97	ESI/ERL";
 
 #include <stdio.h>
-#include <esps/esps.h>
-#include <esps/unix.h>
-#include <esps/sd.h>
-#include <esps/fea.h>
-#include <esps/anafea.h>
-#include <esps/feaspec.h>
-#include <esps/window.h>
-#include <esps/limits.h>
+#include <espsfree/esps.h>
+#include <espsfree/unix.h>
+#include <espsfree/sd.h>
+#include <espsfree/fea.h>
+#include <espsfree/anafea.h>
+#include <espsfree/feaspec.h>
+#include <espsfree/window.h>
+#include <espsfree/limits.h>
 #include <math.h>
 
 #define REQUIRE(test,text) {if (!(test)) {(void) fprintf(stderr, \

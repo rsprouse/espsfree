@@ -35,11 +35,11 @@ char *Version="3.11", *Date="6/23/98";
 /*
  * ESPS Includes
  */
-# include <esps/esps.h>
-# include <esps/fea.h>
-# include <esps/feafilt.h>
-# include <esps/unix.h>
-# include <esps/constants.h> 
+# include <espsfree/esps.h>
+# include <espsfree/fea.h>
+# include <espsfree/feafilt.h>
+# include <espsfree/unix.h>
+# include <espsfree/constants.h> 
 
 /*
  * Defines

@@ -28,9 +28,9 @@
 #define DATE "8/31/95"
 
 #include <stdio.h>
-#include <esps/esps.h>
-#include <esps/unix.h>
-#include <esps/fea.h>
+#include <espsfree/esps.h>
+#include <espsfree/unix.h>
+#include <espsfree/fea.h>
 
 #define REQUIRE(test,text) {if (!(test)) {(void) fprintf(stderr, \
 "%s: %s - exiting\n", ProgName, text); exit(1);}}

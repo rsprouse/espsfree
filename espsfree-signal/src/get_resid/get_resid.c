@@ -57,10 +57,10 @@ will be used.
 */
 
 #include <math.h>
-#include <esps/esps.h>
-#include <esps/fea.h>
-#include <esps/anafea.h>
-#include <esps/feasd.h>
+#include <espsfree/esps.h>
+#include <espsfree/fea.h>
+#include <espsfree/anafea.h>
+#include <espsfree/feasd.h>
 
 #define SYNTAX USAGE("get_resid [-P param_file][-{pr} range][-s range][-a normal][-i int_const][-b band_width][-n nformants][-y][-x debug_level] in_signal in_coef out_file")
 

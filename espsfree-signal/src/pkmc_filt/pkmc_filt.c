@@ -25,12 +25,12 @@ static char *sccs_id = "@(#)pkmc_filt.c	1.7 7/30/97 ERL";
 #include <stdio.h>
 #include <errno.h>
 #include <stdlib.h>
-#include <esps/esps.h>
-#include <esps/constants.h>
-#include <esps/fea.h>
-#include <esps/feafilt.h>
-#include <esps/feasd.h>
-#include <esps/strlist.h>
+#include <espsfree/esps.h>
+#include <espsfree/constants.h>
+#include <espsfree/fea.h>
+#include <espsfree/feafilt.h>
+#include <espsfree/feasd.h>
+#include <espsfree/strlist.h>
 
 #define SYNTAX USAGE ("pkmc_filt [-P param_file][-x debug_level] filt_file");
 #define ERROR_EXIT(text) {(void) fprintf(stderr, "%s: %s - exiting\n", \

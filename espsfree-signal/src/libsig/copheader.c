@@ -22,7 +22,7 @@
 static char *sccs_id = "@(#)copheader.c	1.17	1/18/97	ATT/ESI/ERL";
 
 #include <Objects.h>
-#include <esps/esps.h> 
+#include <espsfree/esps.h> 
 #include <sys/param.h>
 
 char default_header[MAXPATHLEN] = "def_head.feasd";

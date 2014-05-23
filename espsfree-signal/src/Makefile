@@ -19,4 +19,4 @@ subdirs := acf addsd cb_filt cbkd cbkedit cepanal classify dtw ebanner fft \
 all: $(subdirs)
 
 $(subdirs):
-	$(MAKE) -C $@ all
+	$(MAKE) -C $@

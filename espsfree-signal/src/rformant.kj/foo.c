@@ -31,9 +31,9 @@ static char *sccs_id = "@(#)formant.c	1.21	6/5/95	ATT/ESI/ERL";
 #include "math.h"
 #endif
 #include "tracks.h"
-#include <esps/esps.h>
-#include <esps/fea.h>
-#include <esps/sd.h>
+#include <espsfree/esps.h>
+#include <espsfree/fea.h>
+#include <espsfree/sd.h>
 
 #define SYNTAX \
 USAGE("formant [-p preemphasis] [-r n:[[+]m]] [-n num_formants] [-o lpc_order]\n \

@@ -27,10 +27,10 @@ static char *sccs_id = "@(#)iir_filt.c	1.18 01 Oct 1998 ERL";
 
 # include <stdio.h>
 # include <math.h>
-# include <esps/esps.h>
-# include <esps/feafilt.h>
-# include <esps/unix.h>
-# include <esps/constants.h>
+# include <espsfree/esps.h>
+# include <espsfree/feafilt.h>
+# include <espsfree/unix.h>
+# include <espsfree/constants.h>
 
 # define SYNTAX	USAGE ("iir_filt [-P param_file][-x debug_level] filt_file");
 #define ERROR_EXIT(text) {(void) fprintf(stderr, "%s: %s - exiting\n", \

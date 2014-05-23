@@ -35,11 +35,11 @@
 /*
  * ESPS include files
  */
-#include <esps/esps.h>
-#include <esps/unix.h>
-#include <esps/fea.h>
-#include <esps/spsassert.h>
-#include <esps/feastat.h>
+#include <espsfree/esps.h>
+#include <espsfree/unix.h>
+#include <espsfree/fea.h>
+#include <espsfree/spsassert.h>
+#include <espsfree/feastat.h>
 /*
  * defines
  */

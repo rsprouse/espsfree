@@ -24,10 +24,10 @@
 
 
 #include <stdio.h> 
-#include <esps/esps.h> 
-#include <esps/fea.h>
-#include <esps/feadst.h> 
-#include <esps/vq.h>
+#include <espsfree/esps.h> 
+#include <espsfree/fea.h>
+#include <espsfree/feadst.h> 
+#include <espsfree/vq.h>
 
 #define PROG "vqclassify"
 #define SYNTAX USAGE("vqclassify [-x debug_level] [-m method] [-v] infile")

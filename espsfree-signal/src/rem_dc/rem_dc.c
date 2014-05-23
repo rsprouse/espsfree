@@ -28,10 +28,10 @@
 */
 
 # include <stdio.h>
-# include <esps/esps.h>
-# include <esps/fea.h>
-# include <esps/feasd.h>
-# include <esps/unix.h>
+# include <espsfree/esps.h>
+# include <espsfree/fea.h>
+# include <espsfree/feasd.h>
+# include <espsfree/unix.h>
 
 /*
  * Defines

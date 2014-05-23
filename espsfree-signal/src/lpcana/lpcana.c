@@ -32,13 +32,13 @@ static char *sccs_id = "@(#)lpcana.c	3.23	1/23/97	ESI/ERL";
  * ESPS includes
  */
 
-#include <esps/esps.h>
-#include <esps/fea.h>
-#include <esps/feasd.h>
-#include <esps/anafea.h>
-#include <esps/unix.h>
-#include <esps/window.h>
-#include <esps/ana_methods.h>
+#include <espsfree/esps.h>
+#include <espsfree/fea.h>
+#include <espsfree/feasd.h>
+#include <espsfree/anafea.h>
+#include <espsfree/unix.h>
+#include <espsfree/window.h>
+#include <espsfree/ana_methods.h>
 
 /*
  * DEFINES
@@ -62,7 +62,7 @@ static char *sccs_id = "@(#)lpcana.c	3.23	1/23/97	ESI/ERL";
 #define K1_THRESHOLD -0.25
 
 /* system functions and variables */
-/* done via <esps/unix.h>*/
+/* done via <espsfree/unix.h>*/
 FILE *tmpfile();
 
 /* external ESPS functions */

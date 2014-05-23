@@ -33,9 +33,9 @@
 #include <stdio.h>
 
 /* ESPS include files */
-#include <esps/esps.h>
-#include <esps/scbk.h>
-#include <esps/unix.h>
+#include <espsfree/esps.h>
+#include <espsfree/scbk.h>
+#include <espsfree/unix.h>
 
 /* Externals */
 extern  getopt(), 

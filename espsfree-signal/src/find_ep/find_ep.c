@@ -28,18 +28,18 @@ static char *sccs_id = "@(#)find_ep.c	1.14	5/12/97	ESI/ERL";
 #include <math.h>
 
 /*ESPS Includes*/
-#include <esps/esps.h>
-#include <esps/ftypes.h>
-#include <esps/fea.h>
-#include <esps/feasd.h>
-#include <esps/unix.h>
+#include <espsfree/esps.h>
+#include <espsfree/ftypes.h>
+#include <espsfree/fea.h>
+#include <espsfree/feasd.h>
+#include <espsfree/unix.h>
 
 #define SYNTAX \
 USAGE("find_ep [-b adbits] [-c context] [-e] [-f final_thresh]\n [-h high_thresh] [-l low_thresh] [-n] [-p start_point] [-r start_point]\n [-s silence_req] [-t time] [-w] [-x debug-level] [infile.sd] [outfile.sd]")
 
 
 /* system functions*/
-/*done via <esps/unix.h>*/
+/*done via <espsfree/unix.h>*/
 
 /* ESPS Functions */
 void	set_sd_type();

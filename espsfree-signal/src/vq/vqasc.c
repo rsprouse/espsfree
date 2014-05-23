@@ -25,9 +25,9 @@ static char *sccs_id = "@(#)vqasc.c	3.8	1/20/97	ESI/ERL";
  * include files
  */
 #include <stdio.h>
-#include <esps/esps.h>
-#include <esps/fea.h>
-#include <esps/vq.h>
+#include <espsfree/esps.h>
+#include <espsfree/fea.h>
+#include <espsfree/vq.h>
 /*
  * defines
  */

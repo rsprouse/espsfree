@@ -26,10 +26,10 @@ static char *sccs_id = "@(#)write_data.c	1.19	1/18/97	ATT/ESI/ERL";
 #ifdef OS5
 #include <sys/fcntl.h>
 #endif
-#include <esps/esps.h>
-#include <esps/fea.h>
-#include <esps/feasd.h>
-#include <esps/feaspec.h>
+#include <espsfree/esps.h>
+#include <espsfree/fea.h>
+#include <espsfree/feasd.h>
+#include <espsfree/feaspec.h>
 #include <Objects.h>
 #include <spectrogram.h>
 

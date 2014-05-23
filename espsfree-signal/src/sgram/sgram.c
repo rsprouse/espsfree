@@ -21,13 +21,13 @@ char *Version = "1.20";
 char *Date = "8/31/95";
 
 #include <stdio.h>
-#include <esps/esps.h>
-#include <esps/unix.h>
-#include <esps/limits.h>
-#include <esps/feasd.h>
-#include <esps/feaspec.h>
-#include <esps/fea.h>
-#include <esps/window.h>
+#include <espsfree/esps.h>
+#include <espsfree/unix.h>
+#include <espsfree/limits.h>
+#include <espsfree/feasd.h>
+#include <espsfree/feaspec.h>
+#include <espsfree/fea.h>
+#include <espsfree/window.h>
 
 #define ERROR_EXIT(text) {(void) fprintf(stderr, "%s: %s - exiting\n", \
 		ProgName, text); exit(1);}

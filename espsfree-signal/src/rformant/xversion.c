@@ -23,7 +23,7 @@
 static char *sccs_id = "@(#)xversion.c	2.00	5 Apr 2005	D. Talkin";
 
 #include <stdio.h>
-#include <esps/esps.h>
+#include <espsfree/esps.h>
 
 char	*ProgName = "xwaves";
 char	*Version = "6.0";
@@ -41,7 +41,7 @@ set_pvd(hdr)
 }
 
 /*
- * check the version of the base esps/waves installation.  This version
+ * check the version of the base espsfree/waves installation.  This version
  * requires ESPS 5.3 in order to work
 */
 

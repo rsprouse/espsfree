@@ -23,11 +23,11 @@ static char *sccs_id = "@(#)filter2.c	1.12	5/1/98	ERL";
 
 #include <stdio.h>
 #include <signal.h>
-#include <esps/unix.h>
-#include <esps/esps.h>
-#include <esps/fea.h>
-#include <esps/feasd.h>
-#include <esps/feafilt.h>
+#include <espsfree/unix.h>
+#include <espsfree/esps.h>
+#include <espsfree/fea.h>
+#include <espsfree/feasd.h>
+#include <espsfree/feafilt.h>
 
 #define SYNTAX USAGE("filter2 [-P param_file] [-p range] [-r range] [-d data_type] [ -f filter_string] [ -F filt_file] [-z] [-x debug_level] in_file out_file")
 

@@ -29,10 +29,10 @@ static char *sccs_id = "@(#)addsd.c	3.16	11/15/96 ESI";
 #include <stdio.h>
 
 /*ESPS Includes*/
-#include <esps/esps.h>
-#include <esps/fea.h>
-#include <esps/feasd.h>
-#include <esps/unix.h>
+#include <espsfree/esps.h>
+#include <espsfree/fea.h>
+#include <espsfree/feasd.h>
+#include <espsfree/unix.h>
 
 #define SYNTAX_ADD USAGE \
 ("addsd [-x debug-level] [-{pr} range] [-g scale] [-z] [-t] file1 file2 file3")

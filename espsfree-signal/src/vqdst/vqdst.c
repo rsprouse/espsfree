@@ -30,12 +30,12 @@ static char *sccs_id = "@(#)vqdst.c	1.5	1/27/97	ESI/ERL";
 /*
  * ESPS Includes
  */
-#include <esps/esps.h>
-#include <esps/fea.h>
-#include <esps/vq.h>
-#include <esps/feadst.h>
-#include <esps/anafea.h>
-#include <esps/unix.h>
+#include <espsfree/esps.h>
+#include <espsfree/fea.h>
+#include <espsfree/vq.h>
+#include <espsfree/feadst.h>
+#include <espsfree/anafea.h>
+#include <espsfree/unix.h>
 
 /*
  * defines
@@ -49,7 +49,7 @@ static char *sccs_id = "@(#)vqdst.c	1.5	1/27/97	ESI/ERL";
 /*
  * system functions and variables
  */
-/*done via <esps/unix.h>
+/*done via <espsfree/unix.h>
 
 /*
  * external ESPS functions

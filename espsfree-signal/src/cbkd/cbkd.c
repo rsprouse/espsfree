@@ -24,11 +24,11 @@ static char *sccs_id = "@(#)cbkd.c	1.3	1/21/97	ESI/ERL";
 #include <stdio.h>
 #include <string.h>
 #include <math.h>
-#include <esps/esps.h>
-#include <esps/fea.h>
-#include <esps/vq.h>
-#include <esps/spsassert.h>
-#include <esps/limits.h>
+#include <espsfree/esps.h>
+#include <espsfree/fea.h>
+#include <espsfree/vq.h>
+#include <espsfree/spsassert.h>
+#include <espsfree/limits.h>
 
 #define Fprintf (void)fprintf
 #define Fflush (void)fflush

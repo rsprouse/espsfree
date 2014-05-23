@@ -30,16 +30,16 @@ int    debug_level = 0;
 #include <stdlib.h>
 #include <string.h>
 #include <math.h>
-#include <esps/esps.h>
-#include <esps/fea.h>
-#include <esps/feasd.h>
-#include <esps/window.h>
-#include <esps/func.h>
-#include <esps/op.h>
-#include <esps/types.h>
-#include <esps/range_switch.h>
-#include <esps/array.h>
-#include <esps/get_fft.h>
+#include <espsfree/esps.h>
+#include <espsfree/fea.h>
+#include <espsfree/feasd.h>
+#include <espsfree/window.h>
+#include <espsfree/func.h>
+#include <espsfree/op.h>
+#include <espsfree/types.h>
+#include <espsfree/range_switch.h>
+#include <espsfree/array.h>
+#include <espsfree/get_fft.h>
 
 /* LOCAL CONSTANTS */
 

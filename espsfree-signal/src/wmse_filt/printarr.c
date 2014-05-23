@@ -34,7 +34,7 @@ static char *sccsid = "@(#)printarr.c	3.3  8/8/91 ESI ESI";
 /*
  * ESPS Includes
 */
-#include <esps/unix.h>
+#include <espsfree/unix.h>
 
 extern int debug_level;
 

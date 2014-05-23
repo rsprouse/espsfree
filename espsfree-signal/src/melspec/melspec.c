@@ -25,9 +25,9 @@ static char *sccs_id = "@(#)melspec.c	1.1\t7/12/98\tERL";
 
 #include <stdlib.h>
 #include <math.h>
-#include <esps/esps.h>
-#include <esps/fea.h>
-#include <esps/feaspec.h>
+#include <espsfree/esps.h>
+#include <espsfree/fea.h>
+#include <espsfree/feaspec.h>
 
 /* LOCAL CONSTANTS */
 

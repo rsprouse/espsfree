@@ -27,10 +27,10 @@ static char *sccs_id = "@(#)get_f0.c	1.14	10/21/96	ERL";
 #if !defined(LINUX_OR_MAC)
 #include <malloc/malloc.h>
 #endif
-#include <esps/esps.h>
-#include <esps/range_switch.h>
-#include <esps/fea.h>
-#include <esps/feasd.h>
+#include <espsfree/esps.h>
+#include <espsfree/range_switch.h>
+#include <espsfree/fea.h>
+#include <espsfree/feasd.h>
 
 #include "f0.h"
 

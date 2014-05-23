@@ -24,8 +24,8 @@ int    debug_level = 0;
 
 /* INCLUDE FILES */
 #include <stdio.h>
-#include <esps/esps.h>
-#include <esps/fea.h>
+#include <espsfree/esps.h>
+#include <espsfree/fea.h>
 
 #define PROG "zero_pad"
 #define EC_SCCS_DATE "10/20/93"

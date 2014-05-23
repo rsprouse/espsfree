@@ -30,8 +30,8 @@ static char *sccs_id = "@(#)ebanner.c	1.5	07 Feb 1996	ERL";
 #if !defined(LINUX_OR_MAC)
 #include <malloc/malloc.h>
 #endif
-#include <esps/esps.h>
-#include <esps/feasd.h>
+#include <espsfree/esps.h>
+#include <espsfree/feasd.h>
 #ifdef OS5
 #include <sys/fcntl.h>
 #endif

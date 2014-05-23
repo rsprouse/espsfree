@@ -25,10 +25,10 @@ static char *sccs_id = "@(#)filtspec.c	3.17	8/31/95	ERL";
 #include <stdio.h>
 #include <math.h>
 
-#include <esps/esps.h>
-#include <esps/fea.h>
-#include <esps/feaspec.h>
-#include <esps/feafilt.h>
+#include <espsfree/esps.h>
+#include <espsfree/fea.h>
+#include <espsfree/feaspec.h>
+#include <espsfree/feafilt.h>
 
 /*
  * Defines

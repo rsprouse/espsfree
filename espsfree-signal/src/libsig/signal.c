@@ -24,7 +24,7 @@ static char *sccs_id = "@(#)signal.c	1.42	9/28/98	ATT/ESI/ERL";
 
 #include <Objects.h>
 #include <spectrogram.h>
-#include <esps/esps.h>
+#include <espsfree/esps.h>
 #include <sys/param.h>
 
 char           *savestring();

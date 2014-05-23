@@ -26,7 +26,7 @@ static char *sccs_id = "@(#)sigproc.c	1.4	9/9/96	ERL";
 #if !defined(LINUX_OR_MAC)
 #include <malloc/malloc.h>
 #endif
-#include <esps/esps.h>
+#include <espsfree/esps.h>
 #include "f0.h"
 #include "f0_structs.h"
 

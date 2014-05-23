@@ -27,9 +27,9 @@ int  	    debug_level = 2;	    /*level of history detail*/
  * include files
  */
 #include <stdio.h>
-#include <esps/esps.h>
-#include <esps/fea.h>
-#include <esps/vq.h>
+#include <espsfree/esps.h>
+#include <espsfree/fea.h>
+#include <espsfree/vq.h>
 /*
  * defines
  */

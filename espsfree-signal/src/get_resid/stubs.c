@@ -20,7 +20,7 @@
 
 static char *sccs_id = "@(#)stubs.c	1.2	11/7/96	ERL";
 
-#include <esps/esps.h>
+#include <espsfree/esps.h>
 
 open_label_font(){}
 

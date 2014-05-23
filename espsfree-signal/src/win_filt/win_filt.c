@@ -23,11 +23,11 @@ static char *sccs_id = "@(#)win_filt.c	1.4	7/9/93	ERL";
 #include <math.h>
 #include <string.h>
 #include <stdio.h>
-#include <esps/esps.h>
-#include <esps/constants.h>
-#include <esps/window.h>
-#include <esps/fea.h>
-#include <esps/feafilt.h>
+#include <espsfree/esps.h>
+#include <espsfree/constants.h>
+#include <espsfree/window.h>
+#include <espsfree/fea.h>
+#include <espsfree/feafilt.h>
 
 #define SYNTAX USAGE ("win_filt [-P param_file][-x debug_level] filt_file");
 #define ERROR_EXIT(text) {(void) fprintf(stderr, "%s: %s - exiting\n", \

@@ -23,11 +23,11 @@ static char *sccs_id = "@(#)dtw.c	1.6	1/21/97	ERL";
 
 #include <stdio.h>
 #include <math.h>
-#include <esps/esps.h>
-#include <esps/fea.h>
-#include <esps/vq.h>
-#include <esps/spsassert.h>
-#include <esps/limits.h>
+#include <espsfree/esps.h>
+#include <espsfree/fea.h>
+#include <espsfree/vq.h>
+#include <espsfree/spsassert.h>
+#include <espsfree/limits.h>
 
 #define PROG "dtw"
 #define VERSION "1.6"

@@ -19,7 +19,7 @@ static char *sccs_id = "@(#)lpcfloat.c	1.15	9/26/95	ATT/ERL";
 #include <stdio.h>
 #include <math.h>
 #include <fcntl.h>
-#include <esps/limits.h>
+#include <espsfree/limits.h>
     /* for definition of DBL_MAX */
 
 #define MAXORDER	60	/* maximum permissible LPC order */

@@ -23,9 +23,9 @@ static char *sccs_id = "@(#)cb_filt.c	1.9	12/20/93	ERL";
 #include <stdio.h>
 
 /* I added */
-#include <esps/esps.h>
-#include <esps/fea.h>
-#include <esps/feafilt.h>
+#include <espsfree/esps.h>
+#include <espsfree/fea.h>
+#include <espsfree/feafilt.h>
 
 /* Output from p2c, the Pascal-to-C translator */
 /* From input file "meteorJ.p" */
