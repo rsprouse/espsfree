@@ -15,8 +15,9 @@ have been removed, which makes the package much easier to compile in modern
 
 The original esps source code has been reorganized as follows:
 
-- espsfree-dev: Files that are required for compiling esps from source.
-- espsfree-lib: Source code for the esps libraries.
+- espsfree-dev: Files that are required for compiling ESPS from source.
+- espsfree-lib: Source code for the ESPS libraries.
+- espsfree-lib-dev: Header files for the ESPS libraries.
 - espsfree-signal: Source code for signal processing and speech-related commands (e.g. formant, fft, get_f0).
 - espsfree-util: Source code for utility commands (e.g. bhd, hditem, pplain).
 
