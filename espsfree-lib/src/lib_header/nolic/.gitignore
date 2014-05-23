@@ -1,0 +1,6 @@
+# Ignore everything in this directory since it's only used for compiling.
+# And if we don't have .gitignore here git won't store an empty directory
+# for us.
+*
+# Except this file.
+!.gitignore
