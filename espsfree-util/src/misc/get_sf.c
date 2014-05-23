@@ -16,9 +16,9 @@ static char *sccs_id = "@(#)get_sf.c	1.2 1/6/93 ESI";
 #endif
 
 #include <stdio.h>
-#include <esps/esps.h>
-#include <esps/sd.h>
-#include <esps/unix.h>
+#include <espsfree/esps.h>
+#include <espsfree/sd.h>
+#include <espsfree/unix.h>
 
 extern char *optarg;
 extern int optind;

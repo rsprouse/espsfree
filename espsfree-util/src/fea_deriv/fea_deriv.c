@@ -28,9 +28,9 @@
 
 #include <stdio.h>
 #include <ctype.h>
-#include <esps/esps.h>
-#include <esps/unix.h>
-#include <esps/fea.h>
+#include <espsfree/esps.h>
+#include <espsfree/unix.h>
+#include <espsfree/fea.h>
 
 #define SYNTAX \
 USAGE("fea_deriv [-r range] [-T subtype] [-t] [-x debug-level] fieldfile infile.fea outfile.fea")

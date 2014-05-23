@@ -33,14 +33,14 @@ static char    *sccs_id = "@(#)copysps.c	3.24	6/3/98	ESI/ERL";
 #include <stdio.h>
 #include <errno.h>
 
-#include <esps/esps.h>
-#include <esps/fea.h>
-#include <esps/feasd.h>
-#include <esps/spec.h>
-#include <esps/filt.h>
-#include <esps/scbk.h>
-#include <esps/unix.h>
-#include <esps/esignal_fea.h>
+#include <espsfree/esps.h>
+#include <espsfree/fea.h>
+#include <espsfree/feasd.h>
+#include <espsfree/spec.h>
+#include <espsfree/filt.h>
+#include <espsfree/scbk.h>
+#include <espsfree/unix.h>
+#include <espsfree/esignal_fea.h>
 
 
 #define SYNTAX USAGE ("copysps [-x debug_level] [-f] [-r|-p gen_range] [-s time_range ] [-z] [infile] outfile")

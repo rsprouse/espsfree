@@ -15,21 +15,21 @@
 
 
 #include <stdio.h>
-#include <esps/esps.h>
-#include <esps/sd.h>
-#include <esps/spec.h>
-#include <esps/fea.h>
-#include <esps/filt.h>
-#include <esps/scbk.h>
-#include <esps/unix.h>
-#include <esps/feaspec.h>
-#include <esps/feasd.h>
-#include <esps/feafilt.h>
+#include <espsfree/esps.h>
+#include <espsfree/sd.h>
+#include <espsfree/spec.h>
+#include <espsfree/fea.h>
+#include <espsfree/filt.h>
+#include <espsfree/scbk.h>
+#include <espsfree/unix.h>
+#include <espsfree/feaspec.h>
+#include <espsfree/feasd.h>
+#include <espsfree/feafilt.h>
 
 #ifdef ESI
-#include <esps/ana.h>
-#include <esps/pitch.h>
-#include <esps/ros.h>
+#include <espsfree/ana.h>
+#include <espsfree/pitch.h>
+#include <espsfree/ros.h>
 #endif ESI
 
 #define HUGE 2000000000

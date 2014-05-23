@@ -40,10 +40,10 @@ int debug_level = 0;
 #include <string.h>
 /* End of additions */
 #include <ctype.h>
-#include <esps/esps.h>
-#include <esps/fea.h>
-#include <esps/esignal_fea.h>
-#include <esps/pc_wav.h>
+#include <espsfree/esps.h>
+#include <espsfree/fea.h>
+#include <espsfree/esignal_fea.h>
+#include <espsfree/pc_wav.h>
 
 #define SYNTAX USAGE("pplain [-x debug_level] [-r range] [-e grange]\n\t [-f field_range] [-n] [-i] file")
 

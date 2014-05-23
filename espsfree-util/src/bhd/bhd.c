@@ -26,8 +26,8 @@
 #endif
 
 #include <stdio.h>
-#include <esps/esps.h>
-#include <esps/unix.h>
+#include <espsfree/esps.h>
+#include <espsfree/unix.h>
 
 #define SYNTAX USAGE("bhd [-h] [-F] infile [outfile]")
 #define THISPROG "bhd"

@@ -23,8 +23,8 @@ static char *sccs_id = "@(#)featype.c	1.1	2/19/96	ERL";
 
 
 #include <stdio.h>
-#include <esps/esps.h>
-#include <esps/fea.h>
+#include <espsfree/esps.h>
+#include <espsfree/fea.h>
 
 int debug_level = 0;
 

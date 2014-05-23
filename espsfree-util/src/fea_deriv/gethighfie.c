@@ -26,15 +26,15 @@
 #endif
 
 #include <stdio.h>
-#include <esps/esps.h>
-#include <esps/unix.h>
-#include <esps/fea.h>
+#include <espsfree/esps.h>
+#include <espsfree/unix.h>
+#include <espsfree/fea.h>
 
 #define Fflush (void)fflush
 
 /*
  * define the "levels" of the possible scalar numeric data types
- * for ESPS FEA fields (cf. <esps/esps.h>).  We will return the
+ * for ESPS FEA fields (cf. <espsfree/esps.h>).  We will return the
  * type with the highest level.
  */
 
@@ -71,7 +71,7 @@ get_high_field (fields, hd, length)
     int	    i;	    		/* indexing variables */
     int	    j;
 
-    int	    data_type;		/* data type code as given in <esps/esps.h> */
+    int	    data_type;		/* data type code as given in <espsfree/esps.h> */
     int     data_level;		/* data type "level" as defined above */
 
     char    *field_name;	/* string to hold field name */

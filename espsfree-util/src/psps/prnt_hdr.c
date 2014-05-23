@@ -22,8 +22,8 @@
 static char *sccs_id = "%W%	%G%	ESI/ERL";
 
 #include <stdio.h>
-#include <esps/esps.h>
-#include <esps/unix.h>
+#include <espsfree/esps.h>
+#include <espsfree/unix.h>
 
 void tab(), sort(), print_generic();
 void	print_txtcomment();

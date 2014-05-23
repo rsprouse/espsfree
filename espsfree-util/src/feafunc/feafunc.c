@@ -30,11 +30,11 @@ static char *sccs_id = "@(#)feafunc.c	1.11	8/31/95	ESI/ERL";
 #define DATE "8/31/95"
 
 #include <stdio.h>
-#include <esps/esps.h>
-#include <esps/unix.h>
-#include <esps/fea.h>
-#include <esps/feasd.h>
-#include <esps/func.h>
+#include <espsfree/esps.h>
+#include <espsfree/unix.h>
+#include <espsfree/fea.h>
+#include <espsfree/feasd.h>
+#include <espsfree/func.h>
 
 #include <signal.h>
 

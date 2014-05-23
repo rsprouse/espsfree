@@ -22,7 +22,7 @@ static char *sccs_id = "@(#)getespsbas.c	1.1	5/28/91	ERL";
 
 /* INCLUDE FILES */
 
-#include <esps/esps.h> 
+#include <espsfree/esps.h> 
 
 #include <stdio.h>
 

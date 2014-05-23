@@ -28,7 +28,7 @@ static char *sccs_id = "@(#)fea2esig.c	1.4	10/4/97	ERL";
  * While the Esignal definitions are in effect, declare variables so
  * that the Esignal codes can be referred to as
  * EDOUBLE, EFLOAT, ELONG, ESHORT, ECHAR, and EBOOL
- * instead.  After the inclusion of <esps/esps.h> below,
+ * instead.  After the inclusion of <espsfree/esps.h> below,
  * the ESPS definitions of 
  * DOUBLE, FLOAT, LONG, SHORT, CHAR, and BOOL
  * take effect.
@@ -45,8 +45,8 @@ const static int ECHAR = CHAR;
 #undef	CHAR
 const static int EBOOL = BOOL;
 #undef BOOL
-#include <esps/esps.h>
-#include <esps/fea.h>
+#include <espsfree/esps.h>
+#include <espsfree/fea.h>
 
 #define ESPS_TAG "Tag"
 

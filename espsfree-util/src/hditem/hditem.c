@@ -39,10 +39,10 @@ static char *sccs_id = "%W%	%G%	ESI/ERL";
  */
 
 #include <stdio.h>
-#include <esps/esps.h>
-#include <esps/sd.h>     /*added for sdtofea call*/
-#include <esps/feasd.h>  /*added for sdtofea call*/
-#include <esps/unix.h>
+#include <espsfree/esps.h>
+#include <espsfree/sd.h>     /*added for sdtofea call*/
+#include <espsfree/feasd.h>  /*added for sdtofea call*/
+#include <espsfree/unix.h>
 
 extern char *optarg;
 extern int optind;

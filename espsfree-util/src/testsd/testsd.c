@@ -27,8 +27,8 @@ static char *sccs_id = "@(#)testsd.c	3.25	1/5/96 ESI";
  * include files
  */
 #include <stdio.h>
-#include <esps/esps.h>
-#include <esps/feasd.h>
+#include <espsfree/esps.h>
+#include <espsfree/feasd.h>
 #include <math.h>
 /*
  * defines

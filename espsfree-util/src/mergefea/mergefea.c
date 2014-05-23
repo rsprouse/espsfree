@@ -23,9 +23,9 @@ static char *sccs_id = "@(#)mergefea.c	1.16	3/14/94	ESI/ERL";
 
 
 #include <stdio.h>
-#include <esps/esps.h>
-#include <esps/fea.h>
-#include <esps/unix.h>
+#include <espsfree/esps.h>
+#include <espsfree/fea.h>
+#include <espsfree/unix.h>
 
 #define REQUIRE(test,text) {if (!(test)) {Fprintf(stderr, \
 "mergefea: %s - exiting\n", text); exit(1);}}

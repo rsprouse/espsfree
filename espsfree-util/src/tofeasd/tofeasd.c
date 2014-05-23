@@ -27,10 +27,10 @@ static char *sccs_id = "@(#)tofeasd.c	1.4	1/20/97	ESI/ERL";
 #define DATE "1/20/97"
 
 #include <stdio.h>
-#include <esps/esps.h>
-#include <esps/unix.h>
-#include <esps/fea.h>
-#include <esps/feasd.h>
+#include <espsfree/esps.h>
+#include <espsfree/unix.h>
+#include <espsfree/fea.h>
+#include <espsfree/feasd.h>
 
 #define REQUIRE(test,text) {if (!(test)) {(void) fprintf(stderr, \
 "%s: %s - exiting\n", ProgName, text); exit(1);}}

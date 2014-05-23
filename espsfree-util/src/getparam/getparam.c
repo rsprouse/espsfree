@@ -25,7 +25,7 @@ static char *sccs_id = "@(#)getparam.c	1.4	10/20/93	ESI";
 /*
  * system include files
  */
-#include <esps/esps.h>
+#include <espsfree/esps.h>
 /*
  * defines
  */

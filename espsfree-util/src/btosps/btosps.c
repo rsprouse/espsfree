@@ -34,11 +34,11 @@ static char *sccs_id = "@(#)btosps.c	3.26	9/9/97	CSPL/ESI/ERL";
 #endif
 
 #include <stdio.h>
-#include <esps/esps.h>
-#include <esps/fea.h>
-#include <esps/feasd.h>
-#include <esps/unix.h>
-#include <esps/func.h>
+#include <espsfree/esps.h>
+#include <espsfree/fea.h>
+#include <espsfree/feasd.h>
+#include <espsfree/unix.h>
+#include <espsfree/func.h>
 
 #define SIZE 1024
 #define LINE_SIZE 256

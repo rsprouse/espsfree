@@ -20,14 +20,14 @@
 #endif
 
 #include <stdio.h>
-#include <esps/esps.h>
-#include <esps/anafea.h>
-#include <esps/fea.h>
-#include <esps/filt.h>
-#include <esps/scbk.h>
-#include <esps/sd.h>
-#include <esps/spec.h>
-#include <esps/unix.h>
+#include <espsfree/esps.h>
+#include <espsfree/anafea.h>
+#include <espsfree/fea.h>
+#include <espsfree/filt.h>
+#include <espsfree/scbk.h>
+#include <espsfree/sd.h>
+#include <espsfree/spec.h>
+#include <espsfree/unix.h>
 
 void
 check_sd (f1h, f2h)

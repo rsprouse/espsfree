@@ -47,8 +47,8 @@ static char *sccsid = "@(#)eman.c	3.20 10/7/97 ERL";
 #include <ctype.h>
 #include <sys/types.h>
 #include <sys/stat.h>
-#include <esps/esps.h>
-#include <esps/unix.h>
+#include <espsfree/esps.h>
+#include <espsfree/unix.h>
 
 
 /* #define VTROFF "/usr/esp/etroff" */	/* EPI local version for Eunice */
@@ -98,10 +98,10 @@ extern char *build_esps_path();
 #endif
 
 #ifdef DEMO
-#define MANDIR "./esps/man/man"
-#define CATDIR "./esps/man/cat"
-#define LIBDIR "./esps/lib"
-#define ESPS_DBASE "./esps/man/whatis"
+#define MANDIR "./espsfree/man/man"
+#define CATDIR "./espsfree/man/cat"
+#define LIBDIR "./espsfree/lib"
+#define ESPS_DBASE "./espsfree/man/whatis"
 #endif
 
 #define	SYNTAX	USAGE("eman [x debug_lvl] [-t] [-k keyword] [-m dir] [section] program")

@@ -43,8 +43,8 @@ int debug_level = 0;
 #define SYNTAX USAGE ("stats [-x debug_level] [-r rec_range] [-e el_range] [-m magnitude] [-n] file")
 #define MAGNITUDE(x, m) (((x-m) > (m-x)) ? (x-m) : (m-x))
 
-#include <esps/esps.h>
-#include <esps/unix.h>
+#include <espsfree/esps.h>
+#include <espsfree/unix.h>
 
 void lrange_switch (), range_switch ();
 short   get_rec_len ();
