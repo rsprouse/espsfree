@@ -25,6 +25,12 @@ Process for building debian packages:
   cd ..
   dpkg -i espsfree-util_VERSION.deb 
 
+1 Build and install espsfree-signal:
+  cd espsfree/espsfree-signal
+  debuild     # 'y' to continue at warning message (FIXME: fakeroot wont work)
+  cd ..
+  dpkg -i espsfree-signal_VERSION.deb 
+
 == KNOWN ISSUES:
 
 - The current packaging does not conform very well to Debian
