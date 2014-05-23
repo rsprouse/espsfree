@@ -38,7 +38,7 @@ static char *sccs_id = "@(#)dpform.c	1.6	9/21/94	ATT/ESI/ERL";
    best candidate mappings, starting at end of utterance (or current frame).
 */
 
-#include <Objects.h>
+#include <espsfree/Objects.h>
 #include "tracks.h"
 
 /* Here are the major fudge factors for tweaking the formant tracker. */

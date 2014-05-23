@@ -11,7 +11,7 @@
 
 /* downsample.c */
 /* a quick and dirty downsampler */
-#include <Objects.h>
+#include <espsfree/Objects.h>
 
 #define PI 3.1415927
 

@@ -19,7 +19,7 @@ static char *sccs_id = "@(#)tag_writer.c	1.6	9/26/95	ATT/ERL";
 #include <espsfree/esps.h>
 #include <espsfree/fea.h>
 #include <espsfree/feaspec.h>
-#include <Objects.h>
+#include <espsfree/Objects.h>
 
 void	    free_signal();
 void	    free_fea_rec();

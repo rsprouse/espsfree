@@ -46,7 +46,7 @@ static char *sccs_id = "@(#)dpfund.c	1.6	12/13/93	ATT/ESI/ERL";
 Candidates will be ordered according to increasing F0 interval, for
 	convenience. */
 
-#include <Objects.h>
+#include <espsfree/Objects.h>
 #include "tracks.h"
 
 #define MAXPEAKS	40 /* max. # of peaks to examine for cands. */

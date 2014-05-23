@@ -12,7 +12,7 @@
 static char *sccs_id = "@(#)rmhead.c	1.9	9/26/95	ATT/ERL";
 #endif
 
-#include <Objects.h>
+#include <espsfree/Objects.h>
 #define BSIZE 20000
 
 int	debug_level = 0;

@@ -25,8 +25,8 @@ static char *sccs_id = "@(#)parse.c	1.20	9/26/95	ATT/ERL";
 
 #include <stdio.h>
 #include <ctype.h>
-#include <Methods.h>
-#include <w_lengths.h>
+#include <espsfree/Methods.h>
+#include <espsfree/w_lengths.h>
 
 #define TRUE 1
 #define FALSE 0

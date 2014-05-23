@@ -30,8 +30,8 @@ static char *sccs_id = "@(#)write_data.c	1.19	1/18/97	ATT/ESI/ERL";
 #include <espsfree/fea.h>
 #include <espsfree/feasd.h>
 #include <espsfree/feaspec.h>
-#include <Objects.h>
-#include <spectrogram.h>
+#include <espsfree/Objects.h>
+#include <espsfree/spectrogram.h>
 
 void            put_sd_recs();
 void            free_signal();

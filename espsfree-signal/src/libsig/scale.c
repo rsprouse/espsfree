@@ -15,7 +15,7 @@
 static char *sccs_id = "@(#)scale.c	1.7	9/26/95	ATT/ERL";
 #endif
 
-#include <Objects.h>
+#include <espsfree/Objects.h>
 
 main(argc, argv)
      int argc;

@@ -23,7 +23,7 @@ static char *sccs_id = "@(#)lpc_poles.c	1.9 10/7/96 ERL/ATT";
 
 /* computation and I/O routines for dealing with LPC poles */
 
-#include <Objects.h>
+#include <espsfree/Objects.h>
 #ifndef LINUX_OR_MAC
 #include <sgtty.h>
 #endif

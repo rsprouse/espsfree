@@ -15,7 +15,7 @@
 static char *sccs_id = "@(#)addhead.c	1.10	9/26/95	ATT/ERL";
 #endif
 
-#include <Objects.h>
+#include <espsfree/Objects.h>
 
 int debug_level = 0, max_buff_bytes = 2000000, w_verbose = 0;
 

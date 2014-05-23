@@ -27,7 +27,7 @@ static char *sccs_id = "@(#)header.c	1.59	1/18/97	ATT/ESI/ERL";
 #include <espsfree/feaspec.h>
 #include <sys/types.h>
 #include <unistd.h>
-#include <Objects.h>
+#include <espsfree/Objects.h>
 #ifdef OS5
 #include <sys/fcntl.h>
 #endif

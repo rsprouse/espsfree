@@ -21,7 +21,7 @@
 
 static char *sccs_id = "@(#)copheader.c	1.17	1/18/97	ATT/ESI/ERL";
 
-#include <Objects.h>
+#include <espsfree/Objects.h>
 #include <espsfree/esps.h> 
 #include <sys/param.h>
 
