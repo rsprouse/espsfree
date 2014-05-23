@@ -55,12 +55,12 @@
 
 #define MAX_CMAP_SIZE 128
 
-#include <reticle.h>
-#include <Methods.h>
-#include <Utils.h>
-#include <Signals.h>
+#include <espsfree/reticle.h>
+#include <espsfree/Methods.h>
+#include <espsfree/Utils.h>
+#include <espsfree/Signals.h>
 #include <assert.h>
-#include <w_lengths.h>
+#include <espsfree/w_lengths.h>
 
 /* for job control of external ESPS calls */
 #define FOREGROUND 0
