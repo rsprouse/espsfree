@@ -7,6 +7,7 @@ Build-Depends: debhelper (>= 9)
 Package: espsfree-dev
 Architecture: any
 Depends: ${shlib:Depends}, ${misc:Depends}
-Description: esps emake utility
-  The esps emake utility creates a customized environment for invoking make
-  which is suitable for compiling esps programs.
+Description: Required files for building ESPS.
+  This package installs ESPS header files and the ESPS emake utility, which
+  creates a customized environment for invoking make which is suitable for
+  compiling ESPS programs.
