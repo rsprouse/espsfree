@@ -1,1 +1,6 @@
 /usr/include/espsfree
+
+# These are needed for the other ESPS packages.
+/usr/lib/espsfree
+/usr/lib/espsfree/filters
+/usr/lib/espsfree/params
