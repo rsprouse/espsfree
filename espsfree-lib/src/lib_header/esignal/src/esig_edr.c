@@ -25,7 +25,7 @@
 
 static char *sccs_id = "@(#)esig_edr.c	1.7 11/21/95 ERL";
 
-#include <esignal.h>
+#include <espsfree/esignal.h>
 
 /*
  * LOCAL CONSTANTS

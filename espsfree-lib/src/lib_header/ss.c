@@ -12,11 +12,11 @@ be charged with the express written permission of the copyright holders.
 This software is provided ``as is'' without express or implied warranty.
 */
 
-#include <esps/ss.h>
+#include <espsfree/ss.h>
 
 #ifdef M5600
 #define OLD_BSD_FDSETS
-#include <esps/ultrix_cpt.h>
+#include <espsfree/ultrix_cpt.h>
 #endif
 
 static char *sccs_id = "%W% %G%	ERL";

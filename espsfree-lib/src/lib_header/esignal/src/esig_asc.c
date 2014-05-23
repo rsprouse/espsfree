@@ -25,7 +25,7 @@
 
 static char *sccs_id = "@(#)esig_asc.c	1.11 11/21/95 ERL";
 
-#include <esignal.h>
+#include <espsfree/esignal.h>
 #include <ctype.h>
 
 /*

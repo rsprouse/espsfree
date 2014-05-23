@@ -29,7 +29,7 @@ OBJS = genhd.o eopen.o ss.o
 #SPHERE_LIBS = sphere2.6/lib
 #SPHERE_INC = sphere2.6/include
 
-ESIGNAL_LIB = $(LIBDIR)
+#ESIGNAL_LIB = $(LIBDIR)
 #ESIGNAL_LIB = esignal/lib
 ESIGNAL_INC = esignal/src
 
@@ -75,11 +75,11 @@ $(LIBDIR)/$(NHDRLIB):	 $(OBJS) nolic/headers.o
 #
 esps/headers.o:  license.c headers.o $(SINC)/header.h  \
 			$(SINC)/esps.h  \
-			$(ESIGNAL_LIB)/libesignal.a esignal_fea.o  pc_wav.o
+			$(LIBDIR)/libesignal.a esignal_fea.o  pc_wav.o
 		$(ELM_CC) -c  $(CFLAGS)   -DESPS_PROG $(NO_LIC) license.c
 		mv license.o esps
 		ld -o esps/headers.o -r headers.o  esps/license.o \
-		esignal_fea.o $(ESIGNAL_LIB)/libesignal.a  pc_wav.o
+		esignal_fea.o $(LIBDIR)/libesignal.a  pc_wav.o
 
 #waves/headers.o: license.c headers.o  $(SINC)/header.h   \
 #			$(SINC)/esps.h   sphere.o \
@@ -110,11 +110,11 @@ esps/headers.o:  license.c headers.o $(SINC)/header.h  \
 
 nolic/headers.o: nolic_headers.o  $(SINC)/header.h   \
 			$(SINC)/esps.h  \
-			$(ESIGNAL_LIB)/libesignal.a esignal_fea.o  pc_wav.o
+			$(LIBDIR)/libesignal.a esignal_fea.o  pc_wav.o
 		ld -o nolic/headers.o -r nolic_headers.o \
-		esignal_fea.o $(ESIGNAL_LIB)/libesignal.a  pc_wav.o
+		esignal_fea.o $(LIBDIR)/libesignal.a  pc_wav.o
 
-$(ESIGNAL_LIB)/libesignal.a:
+$(LIBDIR)/libesignal.a:
 		cd $(ESIGNAL_INC); emake clean ; emake lib
 
 headers.o:	$(SINC)/header.h $(SINC)/esps.h 
@@ -127,9 +127,9 @@ ss.o:		$(SINC)/ss.h
 #		$(ANSI_CC) -c $(GFLAG) -DLIB -DSCCS -I$(SPSDIR)/include \
 #			-D$(MACH) -I$(SPHERE_INC)  sphere.c
 
-esignal_fea.o:	$(SINC)/esps.h $(SINC)/fea.h $(ESIGNAL_INC)/esignal.h \
+esignal_fea.o:	$(SINC)/esps.h $(SINC)/fea.h $(SINC)/esignal.h \
 			$(SINC)/esignal_fea.h
-		$(ANSI_CC)  -c $(CFLAGS) -D$(MACH) -I$(ESIGNAL_INC) \
+		$(ANSI_CC)  -c $(CFLAGS) -D$(MACH) -I$(SINC) \
 			esignal_fea.c
 
 pc_wav.o:	$(SINC)/esps.h $(SINC)/fea.h $(SINC)/pc_wav.h

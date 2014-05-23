@@ -46,13 +46,13 @@ static char *sccs_id = "@(#)headers.c	1.108	5/2/98	ESI/ERL";
 #include <unistd.h>
 #endif
 #include <sys/stat.h>
-#include <esps/esps.h>
-#include <esps/filt.h>
-#include <esps/unix.h>
-#include <esps/fea.h>
-#include <esps/feasd.h>
-#include <esps/esignal_fea.h>
-#include <esps/pc_wav.h>
+#include <espsfree/esps.h>
+#include <espsfree/filt.h>
+#include <espsfree/unix.h>
+#include <espsfree/fea.h>
+#include <espsfree/feasd.h>
+#include <espsfree/esignal_fea.h>
+#include <espsfree/pc_wav.h>
 
 /* Minimum number of bytes to read to recognize an ESPS file.
  * The ESPS magic number is a 4-byte long following four others
@@ -148,7 +148,7 @@ void check_header();
 #define PRE_ALIGNMENT "1.73"	/* last version without alignment pad */
 
 
-#include <esps/mach_codes.h>
+#include <espsfree/mach_codes.h>
 
 static int	edr_flag=0;		/* global EDR flag for reading */
 static int	machine_code;		/* global machine_code flag */

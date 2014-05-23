@@ -36,8 +36,8 @@ static char *sccsid = "@(#)eopen.c	1.7 1/3/93 ESI";
 #include <stdlib.h>
 #include <string.h>
 /* End of additions */
-#include <esps/esps.h>
-#include <esps/fea.h>
+#include <espsfree/esps.h>
+#include <espsfree/fea.h>
 
 struct header *sdtofea();
 

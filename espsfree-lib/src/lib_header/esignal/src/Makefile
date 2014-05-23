@@ -48,7 +48,7 @@ TSTSRC = t_esignal.c
 TSTOBJ = t_esignal.o
 #TSTOBJ = t_esignal.o getopt.o
 
-INCLUDE = esignal.h
+INCLUDE = $(SINC)/esignal.h
 
 
 lib: $(LIB)

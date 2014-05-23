@@ -23,7 +23,7 @@
 
 static char *sccs_id = "@(#)esignal.c	1.11 10/6/97 ERL";
 
-#include <esignal.h>
+#include <espsfree/esignal.h>
 
 /*
  *  LOCAL FUNCTION DECLARATIONS

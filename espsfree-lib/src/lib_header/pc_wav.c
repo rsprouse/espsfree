@@ -25,10 +25,10 @@
 static char *sccs_id = "@(#)pc_wav.c	1.1	5/1/98	ERL";
 
 
-#include <esps/esps.h>
-#include <esps/fea.h>
-#include <esps/unix.h>
-#include <esps/pc_wav.h>
+#include <espsfree/esps.h>
+#include <espsfree/fea.h>
+#include <espsfree/unix.h>
+#include <espsfree/pc_wav.h>
 
 
 #define WAVE_FORMAT_PCM	(0x0001)

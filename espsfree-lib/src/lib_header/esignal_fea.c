@@ -22,8 +22,8 @@
 static char *sccs_id = "@(#)esignal_fea.c	1.4	10/6/97	ERL";
 
 
-#include <esps/esps.h>
-#include <esps/fea.h>
+#include <espsfree/esps.h>
+#include <espsfree/fea.h>
 /*
  * NAME CONFLICT:  The ESPS data-type codes named
  * DOUBLE, FLOAT, LONG, SHORT, and CHAR
@@ -50,7 +50,7 @@ static int FCHAR = CHAR;
 #undef FLT_MIN
 #undef BOOL
 #include <esignal.h>
-#include <esps/esignal_fea.h>
+#include <espsfree/esignal_fea.h>
 
 char	    *savestring(char *); /* ESPS library function.  Could replace
 				  * with "strdup" if available. */

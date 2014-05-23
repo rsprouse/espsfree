@@ -25,8 +25,8 @@
 static char *sccs_id = "@(#)genhd.c	1.29	28 Oct 1999	ESI/ERL";
 
 #include <stdio.h>
-#include <esps/esps.h>
-#include <esps/unix.h>
+#include <espsfree/esps.h>
+#include <espsfree/unix.h>
 
 #define PWD_SIZE 512
 
