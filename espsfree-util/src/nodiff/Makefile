@@ -21,7 +21,7 @@ CFLAGS = -g $(PROGCFLAGS)
 
 PROGNAME = nodiff
 MANNAME = nodiff.1
-FILTDIR = $(SPSDIR)/lib/filters
+FILTDIR = $(LIBDIR)/filters
 
 install: $(PROGNAME)
 	cp  $(PROGNAME) $(BINDIR)/$(PROGNAME)
