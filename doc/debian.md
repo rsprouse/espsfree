@@ -48,3 +48,8 @@ the debian fake directory structure.
 - The fea2esig command in espsfree-util will not compile. This needs to be
 fixed and compilation needs to be re-enabled in the espsfree-util makefile.
 
+- The formant, get_resid, and rformant commands in espsfree-signal will not
+compile. This needs to be fixed and compilation needs to be re-enabled in
+the espsfree-signal makefile.
+
+- Executables built in espsfree-signal are not installed to /usr/bin.
