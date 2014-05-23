@@ -21,7 +21,7 @@ static char *sccs_id = "@(#)tempname.c	1.5	1/4/96	ERL";
 
 #include <stdio.h>
 #if !defined(LINUX_OR_MAC)
-#include <esps/unix.h>
+#include <espsfree/unix.h>
 #endif
 
 /* #define DEF_TEMP_PATH "/usr/tmp" /* last resort location of temporary files */

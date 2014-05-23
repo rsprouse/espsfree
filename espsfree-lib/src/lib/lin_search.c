@@ -31,7 +31,7 @@ static char *sccs_id = "@(#)lin_search.c	1.13	24 Mar 1997	ESI/ERL";
 #if !defined(LINUX_OR_MAC)
 #include <malloc/malloc.h>
 #endif
-#include <esps/esps.h>
+#include <espsfree/esps.h>
 
 char *savestring();
 

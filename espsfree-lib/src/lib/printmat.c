@@ -25,7 +25,7 @@ Written by: Bernard G. Fraenkel
 #endif
 
 #include <stdio.h>
-#include <esps/esps.h>
+#include <espsfree/esps.h>
 
 extern int debug_level;
 

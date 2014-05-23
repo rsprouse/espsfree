@@ -25,9 +25,9 @@ static char *sccs_id = "@(#)sizerec.c	1.10	5/1/98	ESI/ERL";
 /* RLS: Get rid of 'incompatible implicit declaration' warnings. */
 #include <stdlib.h>
 /* End of additions */
-#include <esps/esps.h>
-#include <esps/esignal_fea.h>
-#include <esps/pc_wav.h>
+#include <espsfree/esps.h>
+#include <espsfree/esignal_fea.h>
+#include <espsfree/pc_wav.h>
 
 size_rec (h)
 struct header *h;

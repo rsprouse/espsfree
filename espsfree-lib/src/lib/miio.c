@@ -27,7 +27,7 @@ static char *sccs_id = "@(#)miio.c	1.19 11/25/96	ERL";
 /* RLS: Get rid of 'incompatible implicit declaration' warnings. */
 #include <stdlib.h>
 /* End of additions */
-#include <esps/esps.h>
+#include <espsfree/esps.h>
 
 static union {
 	double d_val;

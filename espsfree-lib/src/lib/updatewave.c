@@ -21,9 +21,9 @@ static char *sccsid = "@(#)updatewave.c	1.4 2/19/90	ESI";
 #endif
 
 #include <stdio.h>
-#include <esps/esps.h>
+#include <espsfree/esps.h>
 #if !defined(LINUX_OR_MAC)
-#include <esps/unix.h>
+#include <espsfree/unix.h>
 #endif
 
 #define dNULL (double *)NULL

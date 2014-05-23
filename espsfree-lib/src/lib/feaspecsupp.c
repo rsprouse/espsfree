@@ -27,13 +27,13 @@
 /* RLS: Get rid of 'incompatible implicit declaration' warnings. */
 #include <stdlib.h>
 /* End of additions */
-#include <esps/spsassert.h>
-#include <esps/esps.h>
+#include <espsfree/spsassert.h>
+#include <espsfree/esps.h>
 #if !defined(LINUX_OR_MAC)
-#include <esps/unix.h>
+#include <espsfree/unix.h>
 #endif
-#include <esps/fea.h>
-#include <esps/feaspec.h> 
+#include <espsfree/fea.h>
+#include <espsfree/feaspec.h> 
 
 
 char *savestring();
@@ -42,7 +42,7 @@ void free_feaspec_xfields();
 
 /*
  * String array definitions.
- * Keep consistent with constant symbols in esps/feaspec.h.
+ * Keep consistent with constant symbols in espsfree/feaspec.h.
  */
 
 char	*spfmt_names[] = {"NONE", "SYM_CTR", "SYM_EDGE", "ASYM_CTR",

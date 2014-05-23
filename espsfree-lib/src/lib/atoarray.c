@@ -38,9 +38,9 @@ static char *sccs_id = "@(#)atoarray.c	1.9	2/20/96	ERL/ESI";
 #include <stdlib.h>
 #include <string.h>
 /* End of additions */
-#include <esps/esps.h>
+#include <espsfree/esps.h>
 #if !defined(LINUX_OR_MAC)
-#include <esps/unix.h>
+#include <espsfree/unix.h>
 #endif
 #include <math.h>
 

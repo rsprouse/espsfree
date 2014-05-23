@@ -24,8 +24,8 @@ static char *sccs_id = "@(#)copy_fea_rec.c	1.7 3/29/90 ESI";
 #endif
 
 #include <stdio.h>
-#include <esps/esps.h>
-#include <esps/fea.h>
+#include <espsfree/esps.h>
+#include <espsfree/fea.h>
 
 #define COPY(type) { \
     type    *ip = (type *) ifea_ptr, \

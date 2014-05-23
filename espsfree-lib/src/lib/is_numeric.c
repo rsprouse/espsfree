@@ -20,7 +20,7 @@
 
 static char *sccs_id = "@(#)is_numeric.c	1.1	6/25/93	ERL";
 
-#include <esps/esps.h>
+#include <espsfree/esps.h>
 
 
 int

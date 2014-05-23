@@ -22,9 +22,9 @@ static char *sccs_id = "@(#)buildespsp.c	1.1	5/30/91	ERL";
 
 /* INCLUDE FILES */
 
-#include <esps/esps.h>
+#include <espsfree/esps.h>
 #if !defined(LINUX_OR_MAC)
-#include <esps/unix.h>
+#include <espsfree/unix.h>
 #endif
 
 /* LOCAL CONSTANTS */

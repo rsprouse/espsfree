@@ -30,12 +30,12 @@ static char *sccs_id = "@(#)feafiltsupp.c	1.17	12/18/96	ERL";
 /* RLS: Get rid of 'incompatible implicit declaration' warnings. */
 #include <stdlib.h>
 /* End of additions */
-#include <esps/esps.h>
-#include <esps/fea.h>
+#include <espsfree/esps.h>
+#include <espsfree/fea.h>
 #if !defined(LINUX_OR_MAC)
-#include <esps/unix.h>
+#include <espsfree/unix.h>
 #endif
-#include <esps/feafilt.h>
+#include <espsfree/feafilt.h>
 
 char *savestring();
 char **get_feafilt_xfields();

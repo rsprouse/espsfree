@@ -26,9 +26,9 @@ static char *sccs_id = "@(#)fea_compat.c	3.9 3/2/98	ERL";
 /* RLS: Get rid of 'incompatible implicit declaration' warnings. */
 #include <stdlib.h>
 /* End of additions */
-#include <esps/esps.h>
-#include <esps/fea.h>
-#include <esps/spsassert.h>
+#include <espsfree/esps.h>
+#include <espsfree/fea.h>
+#include <espsfree/spsassert.h>
 
 /* RLS: Get rid of 'conflicting types' error resulting from including stdlib.h
 #ifndef DEC_ALPHA

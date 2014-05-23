@@ -32,7 +32,7 @@
 #include <stdlib.h>
 #include <string.h>
 /* End of additions */
-#include <esps/esps.h>
+#include <espsfree/esps.h>
 
 /* table size should be a prime number */
 #define TABLESIZ 299

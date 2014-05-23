@@ -23,8 +23,8 @@ static char	*sccs_id = "@(#)specsupport.c	1.1	10/19/93 ESI";
 #endif
 
 #include <stdio.h>
-#include <esps/esps.h>
-#include <esps/spec.h>
+#include <espsfree/esps.h>
+#include <espsfree/spec.h>
 
 #ifndef DEC_ALPHA
 char *calloc();

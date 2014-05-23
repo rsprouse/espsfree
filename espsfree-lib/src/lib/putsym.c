@@ -23,7 +23,7 @@
 /* End of additions */
 #include <sys/types.h>
 #include <sys/stat.h>
-#include <esps/esps.h>
+#include <espsfree/esps.h>
 
 #define	LINE_SIZE	256
 #define	MAXLEN		256

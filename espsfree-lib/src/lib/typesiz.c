@@ -24,7 +24,7 @@ static char *sccs_id = "@(#)typesiz.c	1.1	10/4/91	ERL";
 /* RLS: Get rid of 'incompatible implicit declaration' warnings. */
 #include <stdlib.h>
 /* End of additions */
-#include <esps/esps.h>
+#include <espsfree/esps.h>
 
 int
 typesiz (type)

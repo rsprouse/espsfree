@@ -23,8 +23,8 @@ static char	*sccsid = "@(#)filtsupport.c	1.8 6/5/89 ESI";
 #include <stdio.h>
 #include <ctype.h>
 
-#include <esps/esps.h>
-#include <esps/filt.h>
+#include <espsfree/esps.h>
+#include <espsfree/filt.h>
 
 
 

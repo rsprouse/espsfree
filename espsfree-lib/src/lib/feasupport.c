@@ -25,15 +25,15 @@ static char *sccs_id = "@(#)feasupport.c	1.33	5/1/98	ESI/ERL";
 #include <stdlib.h>
 #include <string.h>
 /* End of additions */
-#include <esps/esps.h>
+#include <espsfree/esps.h>
 #include <ctype.h>
-#include <esps/fea.h>
+#include <espsfree/fea.h>
 #if !defined(DEC_ALPHA) && !defined(LINUX_OR_MAC)
-#include <esps/unix.h>
+#include <espsfree/unix.h>
 #endif
 #include <math.h>
-#include <esps/esignal_fea.h>
-#include <esps/pc_wav.h>
+#include <espsfree/esignal_fea.h>
+#include <espsfree/pc_wav.h>
 
 char   *savestring ();
 int     lin_search2 (), idx_ok ();

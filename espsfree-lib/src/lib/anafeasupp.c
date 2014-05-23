@@ -27,9 +27,9 @@ static char *sccs_id = "@(#)anafeasupp.c	1.9	10/19/93 ESI";
 #include <stdlib.h>
 /* End of additions */
 #include <assert.h>
-#include <esps/esps.h>
-#include <esps/fea.h>
-#include <esps/anafea.h>
+#include <espsfree/esps.h>
+#include <espsfree/fea.h>
+#include <espsfree/anafea.h>
 
 /*
  * external system functions

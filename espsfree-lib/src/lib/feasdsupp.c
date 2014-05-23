@@ -28,15 +28,15 @@ static char *sccs_id = "@(#)feasdsupp.c	1.16	5/1/98	ESI/ERL";
 /* RLS: Get rid of 'incompatible implicit declaration' warnings. */
 #include <stdlib.h>
 /* End of additions */
-#include <esps/esps.h>
+#include <espsfree/esps.h>
 #if !defined(LINUX_OR_MAC)
-#include <esps/unix.h>
+#include <espsfree/unix.h>
 #endif
-#include <esps/fea.h>
-#include <esps/feasd.h>
+#include <espsfree/fea.h>
+#include <espsfree/feasd.h>
 #include <math.h>
-#include <esps/esignal_fea.h>
-#include <esps/pc_wav.h>
+#include <espsfree/esignal_fea.h>
+#include <espsfree/pc_wav.h>
 
 char           *arr_alloc(), *marg_index();
 int             typesiz();

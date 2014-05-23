@@ -21,7 +21,7 @@
 static char *sccs_id = "@(#)trngswitch.c	1.3	12/3/91	ERL";
 
 #include <stdio.h>
-#include <esps/esps.h>
+#include <espsfree/esps.h>
 
 extern int debug_level; 
 

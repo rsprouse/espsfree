@@ -25,9 +25,9 @@
 #include <stdlib.h>
 /* End of additions */
 #if !defined(LINUX_OR_MAC)
-#include <esps/unix.h>
+#include <espsfree/unix.h>
 #endif
-#include <esps/esps.h>
+#include <espsfree/esps.h>
 
 long    *grange_switch();
 char    *savestring();

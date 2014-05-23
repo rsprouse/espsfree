@@ -22,9 +22,9 @@ static char *sccs_id = "@(#)vqsupport.c	1.13	12/1/93 EPI";
 
 #include <stdio.h>
 #include <assert.h>
-#include <esps/esps.h>
-#include <esps/fea.h>
-#include <esps/vq.h>
+#include <espsfree/esps.h>
+#include <espsfree/fea.h>
+#include <espsfree/vq.h>
 
 float **f_mat_alloc();
 #ifndef DEC_ALPHA

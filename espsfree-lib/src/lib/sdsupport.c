@@ -25,12 +25,12 @@ static char *sccs_id = "@(#)sdsupport.c	1.25	12/18/96	ESI/ERL";
 /* RLS: Get rid of 'incompatible implicit declaration' warnings. */
 #include <stdlib.h>
 /* End of additions */
-#include <esps/esps.h>
-#include <esps/sd.h>
-#include <esps/fea.h>
-#include <esps/feasd.h>
+#include <espsfree/esps.h>
+#include <espsfree/sd.h>
+#include <espsfree/fea.h>
+#include <espsfree/feasd.h>
 #if !defined(LINUX_OR_MAC)
-#include <esps/unix.h>
+#include <espsfree/unix.h>
 #endif
 
 short	get_fea_type();

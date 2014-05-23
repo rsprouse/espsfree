@@ -24,7 +24,7 @@
 #include <string.h>
 /* End of additions */
 #include <assert.h>
-#include <esps/esps.h>
+#include <espsfree/esps.h>
 #define MAX_NUMSTRING 10    /*maximum additional numerical characters*/
 
 /*

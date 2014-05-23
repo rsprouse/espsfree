@@ -28,9 +28,9 @@
 #include <stdlib.h>
 /* End of additions */
 #if !defined(LINUX_OR_MAC)
-#include <esps/unix.h>
+#include <espsfree/unix.h>
 #endif
-#include <esps/esps.h>
+#include <espsfree/esps.h>
 
 #define ERROR(text) \
 {(void) fprintf(stderr, "%s: %s\n", PROG, text); exit(1);}

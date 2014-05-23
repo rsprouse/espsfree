@@ -16,7 +16,7 @@ static char *sccs_id = "@(#)genzfunc.c	1.7	10/19/93 ESI";
 #include <stdlib.h>
 #include <string.h>
 /* End of additions */
-#include <esps/esps.h>
+#include <espsfree/esps.h>
 
 /* RLS: Get rid of 'conflicting types' errors resulting from including
    stdlib.h and string.h

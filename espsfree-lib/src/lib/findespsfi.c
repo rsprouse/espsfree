@@ -28,9 +28,9 @@ static char *sccs_id = "@(#)findespsfi.c	1.11	4/6/93	ERL";
 /* End of additions */
 #include <string.h>
 #if !defined(LINUX_OR_MAC)
-#include <esps/unix.h>
+#include <espsfree/unix.h>
 #endif
-#include <esps/esps.h>
+#include <espsfree/esps.h>
 #include <sys/types.h>
 #if !defined(APOLLO_68K) && !defined(OS5)
 #include <sys/dir.h>

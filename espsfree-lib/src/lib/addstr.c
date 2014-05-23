@@ -29,9 +29,9 @@ static char *sccs_id = "@(#)addstr.c	1.2	4/21/91	ESI/ERL";
 #include <stdlib.h>
 /* End of additions */
 #if !defined(LINUX_OR_MAC)
-#include <esps/unix.h>
+#include <espsfree/unix.h>
 #endif
-#include <esps/esps.h>
+#include <espsfree/esps.h>
  
 void
 addstr(str, arr)

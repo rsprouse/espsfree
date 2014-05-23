@@ -27,11 +27,11 @@ static char *sccs_id = "@(#)getespsbas.c	1.3	2/20/96	ERL";
 #include <stdlib.h>
 #include <string.h>
 /* End of additions */
-#include <esps/esps.h>
+#include <espsfree/esps.h>
 #if !defined(LINUX_OR_MAC)
-#include <esps/unix.h>
+#include <espsfree/unix.h>
 #endif
-#include <esps/spsassert.h>
+#include <espsfree/spsassert.h>
 
 /*
  *  Get max length of path definitions.

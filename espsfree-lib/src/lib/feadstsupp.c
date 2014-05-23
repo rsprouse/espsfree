@@ -26,10 +26,10 @@ static char *sccs_id = "@(#)feadstsupp.c	1.3 12/18/96 ERL";
 /* RLS: Get rid of 'incompatible implicit declaration' warnings. */
 #include <stdlib.h>
 /* End of additions */
-#include <esps/esps.h>
-#include <esps/fea.h>
-#include <esps/feadst.h>
-#include <esps/vq.h>
+#include <espsfree/esps.h>
+#include <espsfree/fea.h>
+#include <espsfree/feadst.h>
+#include <espsfree/vq.h>
 
 /* RLS: Get rid of 'conflicting types' error resulting from including
    stdlib.h

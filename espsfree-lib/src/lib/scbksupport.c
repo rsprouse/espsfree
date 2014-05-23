@@ -15,8 +15,8 @@
 	static char *sccs_id = "@(#)scbksupport.c	1.1 10/19/93 ESI";
 #endif
 #include <stdio.h>
-#include <esps/esps.h>
-#include <esps/scbk.h>
+#include <espsfree/esps.h>
+#include <espsfree/scbk.h>
 
 #ifndef DEC_ALPHA
 char *calloc();

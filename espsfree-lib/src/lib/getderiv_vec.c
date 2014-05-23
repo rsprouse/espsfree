@@ -27,8 +27,8 @@ static char *sccs_id = "@(#)getderiv_vec.c	1.2  2/14/96 ESI";
 /* RLS: Get rid of 'incompatible implicit declaration' warnings. */
 #include <stdlib.h>
 /* End of additions */
-#include <esps/esps.h>
-#include <esps/fea.h>
+#include <espsfree/esps.h>
+#include <espsfree/fea.h>
 
 
 #define PACK_IT(type_from, ptr, format) { \
