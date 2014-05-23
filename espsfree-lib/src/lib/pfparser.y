@@ -25,9 +25,9 @@
 static char *sccsid = "%W% %G% ERL";
 
 #include <stdio.h>
-#include <esps/param.h>
-#include <esps/spsassert.h>
-#include <esps/epaths.h>
+#include <espsfree/param.h>
+#include <espsfree/spsassert.h>
+#include <espsfree/epaths.h>
 
 #define PROMPT 1
 #define NOPROMPT 0
