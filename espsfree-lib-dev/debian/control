@@ -1,0 +1,10 @@
+Source: espsfree-lib-dev
+Maintainer: Ronald L. Sprouse <ronald@berkeley.edu>
+Priority: optional
+Build-Depends: debhelper (>= 9)
+
+
+Package: espsfree-lib-dev
+Architecture: any
+Depends: ${shlib:Depends}, ${misc:Depends}
+Description: Header files needed to compile espsfree-lib package.
