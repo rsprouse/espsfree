@@ -8,9 +8,8 @@
 # 				
 #  makefile for rformant %W% %G% ERL
 
-CFLAGS = -O -I. -I../../h $(PROGCFLAGS)
+CFLAGS = -O -I. -I../../h -I/usr/include/atlas $(PROGCFLAGS)
 #CFLAGS = -g -I. -I../../h $(PROGCFLAGS)
-SIGPROC = ../sigproc/
 
 SUNLIB =  -lm
 DOCDIR = $(SPSDIR)/doc/waves
@@ -21,16 +20,16 @@ PROGS =  rformant
 PROGS_I = $(BINDIR)/rformant
 OTHER_STUFF = addnoise downsamp gate formsy debias
 
-rformant: $(FORMANT_OBJS) $(SIGPROC)/libdsigproc.a $(NSPSLIB) \
+rformant: $(FORMANT_OBJS) $(NSPSLIB) \
 		$(LIBDIR)/$(NHDRLIB)
 	cc -o rformant ${CFLAGS} \
-	$(FORMANT_OBJS) $(SIGPROC)/libdsigproc.a \
+	$(FORMANT_OBJS) $(LIBDIR)/libdsigproc.a \
 	$(LIBDIR)/xlibsig.a  $(SUNLIB) $(LIBDIR)/$(NHDRLIB) $(NSPSLIB) $(SUNLIB)
 
-pure: $(FORMANT_OBJS) $(SIGPROC)/libdsigproc.a $(NSPSLIB) \
+pure: $(FORMANT_OBJS) $(NSPSLIB) \
 		$(LIBDIR)/$(NHDRLIB)
 	purify cc -o rformant ${CFLAGS} \
-	$(FORMANT_OBJS) $(SIGPROC)/libdsigproc.a \
+	$(FORMANT_OBJS) $(LIBDIR)/libdsigproc.a \
 	$(LIBDIR)/xlibsig.a  $(SUNLIB) $(LIBDIR)/$(NHDRLIB) $(NSPSLIB) $(SUNLIB)
 
 # RLS: 
