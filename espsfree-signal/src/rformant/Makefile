@@ -12,7 +12,7 @@ CFLAGS = -O -I. -I../../h -I/usr/include/atlas $(PROGCFLAGS)
 #CFLAGS = -g -I. -I../../h $(PROGCFLAGS)
 
 SUNLIB =  -lm
-DOCDIR = $(SPSDIR)/doc/waves
+DOCDIR = $(SPSDIR)/share/doc/espsfree
 
 FORMANT_OBJS = dpform.o rformant.o lpc_poles.o rlpc.o \
 	dpfund.o cross.o downsample.o pole_methods.o xversion.o
@@ -50,14 +50,14 @@ $(BINDIR)/rformant: rformant
 	cp $? $(BINDIR)/$?
 	chmod $(PROGMOD) $(BINDIR)/$?
 	-rm -f $(MANDIR)/man1/rformant.1
-	cp ../man/rformant.1 $(MANDIR)/man1
+	cp rformant.1 $(MANDIR)/man1
 	chmod $(MANMOD) $(MANDIR)/man1/rformant.1
 
 doc:	$(DOCDIR)/rformant.help
 
-$(DOCDIR)/rformant.help:	../text/rformant.help
+$(DOCDIR)/rformant.help:	rformant.help
 	-rm -f $(DOCDIR)/rformant.help
-	cp ../text/rformant.help $(DOCDIR)
+	cp rformant.help $(DOCDIR)
 	chmod $(MANMOD) $(DOCDIR)/rformant.help
 
 addnoise:  addnoise.o  /usr/local/lib/xlibsig.a

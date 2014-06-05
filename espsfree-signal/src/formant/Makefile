@@ -11,7 +11,7 @@
 CFLAGS = -O  -I. -I../../h $(PROGCFLAGS)
 
 SUNLIB =  -lm
-DOCDIR = $(SPSDIR)/doc/waves
+DOCDIR = $(SPSDIR)/share/doc/espsfree
 
 FORMANT_OBJS = dpform.o formant.o lpc_poles.o \
 	dpfund.o cross.o downsample.o pole_methods.o xversion.o
@@ -49,17 +49,17 @@ $(BINDIR)/formant: formant
 	cp $? $(BINDIR)/$?
 	chmod $(PROGMOD) $(BINDIR)/$?
 	-rm -f $(MANDIR)/man1/formant.1
-	cp ../man/formant.1 $(MANDIR)/man1
+	cp formant.1 $(MANDIR)/man1
 	chmod $(MANMOD) $(MANDIR)/man1/formant.1
 
 doc:	$(DOCDIR)/formant.help
 
-$(DOCDIR)/formant.help:	../text/formant.help
+$(DOCDIR)/formant.help:	formant.help
 	-rm -f $(DOCDIR)/formant.help
-	cp ../text/formant.help $(DOCDIR)
+	cp formant.help $(DOCDIR)
 	chmod $(MANMOD) $(DOCDIR)/formant.help
 
-addnoise:  addnoise.o  /usr/local/lib/xlibsig.a
+addnoise:  addnoise.o  $(LIBDIR)/xlibsig.a
 	cc -o addnoise ${CFLAGS} addnoise.o $(LIBDIR)/xlibsig.a -lm
 
 downsamp:  downsamp.o  downsample.o

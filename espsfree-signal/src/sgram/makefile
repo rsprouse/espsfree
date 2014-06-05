@@ -39,8 +39,8 @@ saber_src: $(SRCS)
 
 install: $(PROGNAME)
 	$(STRIP) $(PROGNAME)
-	-mv -f $(BINDIR)/$(PROGNAME) $(OLDBIN)/$(PROGNAME)
-	-chmod $(PROGMOD) $(OLDBIN)/$(PROGNAME)
+	#-mv -f $(BINDIR)/$(PROGNAME) $(OLDBIN)/$(PROGNAME)
+	#-chmod $(PROGMOD) $(OLDBIN)/$(PROGNAME)
 	mv -f $(PROGNAME) $(BINDIR)/$(PROGNAME)
 	chmod $(PROGMOD) $(BINDIR)/$(PROGNAME)
 	-diffmk $(MANDIR)/man1/$(MANNAME) $(MANNAME) man.diff
@@ -56,10 +56,10 @@ install: $(PROGNAME)
 	cp $(DEFPARAMW) $(PARAMDIR)/$(DEFPARAMW)
 	chmod $(LIBMOD) $(PARAMDIR)/$(DEFPARAMW)
 
-	-rm -rf $(SPSDIR)/src_examples/sgram
-	mkdir $(SPSDIR)/src_examples/sgram
-	-cp * $(SPSDIR)/src_examples/sgram
-	(cd $(SPSDIR)/src_examples/sgram; emake clean)
+	#-rm -rf $(SPSDIR)/share/espsfree/src_examples/sgram
+	#mkdir $(SPSDIR)/share/espsfree/src_examples/sgram
+	#-cp * $(SPSDIR)/share/espsfree/src_examples/sgram
+	#(cd $(SPSDIR)/share/espsfree/src_examples/sgram; emake clean)
 
 clean:	
 	-rm -f $(OBJS) $(PROGNAME)  lint
