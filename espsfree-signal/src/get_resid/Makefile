@@ -19,7 +19,7 @@
  	
 CFLAGS = -O $(PROGCFLAGS) 
 
-SIGPROC = $(ESPS_BASE)/lib/waves/libdsigproc.a
+SIGPROC = $(LIBDIR)/libdsigproc.a
 OBJS = get_resid.o stubs.o
 SRCS = get_resid.c stubs.c
 PROGNAME = get_resid
