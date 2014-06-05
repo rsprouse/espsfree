@@ -17,9 +17,9 @@ libdsigproc.a:	$(LIB_OBJS)
 	ar rv $@ $?
 	$(RANLIB) $@
 
-install: $(WAVESDIR)/libdsigproc.a
+install: $(LIBDIR)/libdsigproc.a
 
-$(WAVESDIR)/libdsigproc.a: libdsigproc.a
+$(LIBDIR)/libdsigproc.a: libdsigproc.a
 	-rm -f $@
 	cp $? $@
 	chmod $(LIBMOD) $@

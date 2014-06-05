@@ -9,7 +9,6 @@
 #  makefile for formant %W% %G% ERL
 
 CFLAGS = -O  -I. -I../../h $(PROGCFLAGS)
-SIGPROC = ../sigproc/
 
 SUNLIB =  -lm
 DOCDIR = $(SPSDIR)/doc/waves
@@ -20,16 +19,16 @@ PROGS =  formant
 PROGS_I = $(BINDIR)/formant
 OTHER_STUFF = addnoise downsamp gate formsy debias
 
-formant: $(FORMANT_OBJS) $(SIGPROC)/libdsigproc.a $(NSPSLIB) \
+formant: $(FORMANT_OBJS) $(NSPSLIB) \
 		$(LIBDIR)/$(NHDRLIB)
 	cc -o formant ${CFLAGS} \
-	$(FORMANT_OBJS) $(SIGPROC)/libdsigproc.a \
+	$(FORMANT_OBJS) $(LIBDIR)/libdsigproc.a \
 	$(LIBDIR)/xlibsig.a  $(SUNLIB) $(LIBDIR)/$(NHDRLIB) $(NSPSLIB) $(SUNLIB)
 
-pure: $(FORMANT_OBJS) $(SIGPROC)/libdsigproc.a $(NSPSLIB) \
+pure: $(FORMANT_OBJS) $(NSPSLIB) \
 		$(LIBDIR)/$(NHDRLIB)
 	purify cc -o formant ${CFLAGS} \
-	$(FORMANT_OBJS) $(SIGPROC)/libdsigproc.a \
+	$(FORMANT_OBJS) $(LIBDIR)/libdsigproc.a \
 	$(LIBDIR)/xlibsig.a  $(SUNLIB) $(LIBDIR)/$(NHDRLIB) $(NSPSLIB) $(SUNLIB)
 
 # RLS: 
