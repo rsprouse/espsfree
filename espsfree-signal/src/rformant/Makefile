@@ -60,7 +60,7 @@ $(DOCDIR)/rformant.help:	rformant.help
 	cp rformant.help $(DOCDIR)
 	chmod $(MANMOD) $(DOCDIR)/rformant.help
 
-addnoise:  addnoise.o  /usr/local/lib/xlibsig.a
+addnoise:  addnoise.o  $(LIBDIR)/xlibsig.a
 	cc -o addnoise ${CFLAGS} addnoise.o $(LIBDIR)/xlibsig.a -lm
 
 downsamp:  downsamp.o  downsample.o
