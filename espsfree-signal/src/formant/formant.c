@@ -23,7 +23,7 @@ static char *sccs_id = "@(#)formant.c	1.23	11/5/96	ATT/ESI/ERL";
 #define VERSION "1.19"
 #define DATE "9/20/94"
 
-#include <Objects.h>
+#include <espsfree/Objects.h>
 #ifndef LINUX_OR_MAC
 #include <sgtty.h>
 #endif

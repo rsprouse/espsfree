@@ -15,7 +15,7 @@
 static char *sccs_id = "@(#)pole_methods.c	1.2	9/26/95	ATT/ERL";
 #endif
 
-#include <Objects.h>
+#include <espsfree/Objects.h>
 #include <tracks.h>
 
 int read_poles(), write_poles();
