@@ -34,8 +34,8 @@ $(OBJS): $(SINC)/esps.h
 
 install: $(PROGNAME)
 	$(STRIP) $(PROGNAME)
-	-mv -f $(BINDIR)/$(PROGNAME) $(OLDBIN)/$(PROGNAME)
-	-chmod $(PROGMOD) $(OLDBIN)/$(PROGNAME)
+#	-mv -f $(BINDIR)/$(PROGNAME) $(OLDBIN)/$(PROGNAME)
+#	-chmod $(PROGMOD) $(OLDBIN)/$(PROGNAME)
 	mv -f $(PROGNAME) $(BINDIR)/$(PROGNAME)
 	chmod $(PROGMOD) $(BINDIR)/$(PROGNAME)
 	-diffmk $(MANDIR)/man1/$(MANNAME) $(MANNAME) man.diff
