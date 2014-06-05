@@ -14,30 +14,42 @@ Process for building debian packages:
 1. Build and install espsfree-dev:
 
     cd espsfree/espsfree-dev
+    
     sudo debuild -us -uc     # 'y' to continue at warning message
+    
     cd ..
-    dpkg -i espsfree-dev_VERSION.deb 
+    
+    sudo dpkg -i espsfree-dev_VERSION.deb 
 
 1. Build and install espsfree-lib:
 
     cd espsfree/espsfree-lib
+    
     sudo debuild -us -uc    # 'y' to continue at warning message (FIXME: fakeroot wont work)
+    
     cd ..
-    dpkg -i espsfree-lib_VERSION.deb 
+    
+    sudo dpkg -i espsfree-lib_VERSION.deb 
 
 1. Build and install espsfree-util:
 
     cd espsfree/espsfree-util
+    
     sudo debuild -us -uc    # 'y' to continue at warning message (FIXME: fakeroot wont work)
+    
     cd ..
-    dpkg -i espsfree-util_VERSION.deb 
+    
+    sudo dpkg -i espsfree-util_VERSION.deb 
 
 1. Build and install espsfree-signal:
 
     cd espsfree/espsfree-signal
+    
     sudo debuild -us -uc     # 'y' to continue at warning message (FIXME: fakeroot wont work)
+    
     cd ..
-    dpkg -i espsfree-signal_VERSION.deb 
+    
+    sudo dpkg -i espsfree-signal_VERSION.deb 
 
 == KNOWN ISSUES:
 
