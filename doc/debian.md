@@ -7,6 +7,9 @@ broken packages.
 
 Process for building debian packages:
 
+NOTE: use --no-tgz-check in debuild command to prevent warning message
+for missing orig.tar.gz.
+
 1. Get the latest code:
 
     git clone https://github.com/rsprouse/espsfree
