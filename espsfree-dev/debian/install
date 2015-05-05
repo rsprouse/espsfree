@@ -19,6 +19,7 @@ ftypes.h usr/include/espsfree
 func.h usr/include/espsfree
 get_fft.h usr/include/espsfree
 header.h usr/include/espsfree
+labels.h usr/include/espsfree
 limits.h usr/include/espsfree
 lpsyn.h usr/include/espsfree
 mach_codes.h usr/include/espsfree
@@ -43,3 +44,4 @@ Signals.h usr/include/espsfree
 spectrogram.h usr/include/espsfree
 Utils.h usr/include/espsfree
 w_lengths.h usr/include/espsfree
+wave_colors.h usr/include/espsfree
