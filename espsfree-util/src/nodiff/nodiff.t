@@ -18,10 +18,10 @@
 # 
 # Brief description: nodiff test script
 # 
-echo "Nodiff expects to find filters in ESPS_BASE/lib/filters "
+echo "Nodiff expects to find filters in ESPS_BASE/lib/espsfree/filters "
 echo "following should find diff1.filt, ..., diff5.filt"
-echo "ls `get_esps_base`/lib/filters/diff[1-5].filt"
-ls `get_esps_base`/lib/filters/diff[1-5].filt
+echo "ls `get_esps_base`/lib/espsfree/filters/diff[1-5].filt"
+ls `get_esps_base`/lib/espsfree/filters/diff[1-5].filt
 echo " " 
 cat > asc << EOD
 1 -1
