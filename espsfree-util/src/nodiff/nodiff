@@ -84,7 +84,7 @@ FLDNAMEOUT="$FLDNAME"_d"$ORDER"
 
 case $ORDER in
 1 | 2 | 3 | 4 | 5)
-	FLTNAME=`get_esps_base`/lib/filters/diff$ORDER.filt;;
+	FLTNAME=`get_esps_base`/lib/espsfree/filters/diff$ORDER.filt;;
 *)
 	echo "nodiff: order $ORDER out of range - exiting."
 	exit 1 ;;
