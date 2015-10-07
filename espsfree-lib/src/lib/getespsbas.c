@@ -55,7 +55,10 @@ static char *sccs_id = "@(#)getespsbas.c	1.3	2/20/96	ERL";
 
 /* LOCAL TYPEDEFS AND STRUCTURES */
 
+/* Changed by RLS 10/6/2015
 #define DEF_ESPS_BASE "/usr/local/esps"
+*/
+#define DEF_ESPS_BASE "/usr"
 
 
 /*
