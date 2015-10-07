@@ -7,7 +7,7 @@ subdirs := bhd btosps copysps fea_deriv feafunc get_esps_base \
 
 isubdirs := bhd btosps copysps fea_deriv feafunc get_esps_base \
            getparam hditem mergefea misc nodiff pplain psps stats testsd \
-           tofeasd
+           tofeasd wav2sd
 
 .PHONY: all $(subdirs)
 

@@ -1,0 +1,35 @@
+#!/usr/bin/env bash
+# "wav2sd"
+# USAGE: wav2sd FILE.wav
+# converts windows .wav sound files into an entropics FEA_SD sound file
+# with the same name but the extention .sd
+#
+# Written by Nicholas Kibre
+# U.C. Santa Barbara Linguistics Department
+#  nick@vowel.ucsb.edu
+# also Panasonic Speech Technology Laboratory
+#  nick@stl.research.panasonic.com
+#
+# Bash version - Keith Johnson
+
+[ $# -eq 0 ] && { echo "Usage: $0 wavfile"; exit 999; }
+
+while [ "$1" != "" ] 
+do
+    my_in=$1
+    my_out=`echo $my_in | awk -F. '{print $1 ".sd"}'`
+
+    rm wav2sd.tmp >& /dev/null
+    soxi $my_in >& wav2sd.tmp
+
+    sr=`awk '/Sample Rate/ {print $4}' wav2sd.tmp`
+    nchan=`awk '/Channels/ {print $3}' wav2sd.tmp`
+
+    echo "Converting" $my_in "into" $my_out ", Sampling rate =" $sr ", Number of channels =" $nchan
+
+    sox $my_in -t sw - \
+	 | btosps -f $sr -T 0 -n $nchan -t short -S 0 -c "converted from .wav by wav2sd" - $my_out
+
+    rm wav2sd.tmp
+    shift
+done
