@@ -25,7 +25,7 @@ do
     sr=`awk '/Sample Rate/ {print $4}' wav2sd.tmp`
     nchan=`awk '/Channels/ {print $3}' wav2sd.tmp`
 
-    echo "Converting" $my_in "into" $my_out ", Sampling rate =" $sr ", Number of channels =" $nchan
+    (>&2 echo "Converting" $my_in "into" $my_out ", Sampling rate =" $sr ", Number of channels =" $nchan)
 
     sox $my_in -t sw - \
 	 | btosps -f $sr -T 0 -n $nchan -t short -S 0 -c "converted from .wav by wav2sd" - $my_out
