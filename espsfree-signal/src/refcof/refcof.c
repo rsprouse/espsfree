@@ -33,13 +33,13 @@
 static char *sccs_id = "@(#)refcof.c	3.28	9/9/98	ESI/ERL";
 
 #include <stdio.h>
-#include <esps/unix.h>
-#include <esps/esps.h>
-#include <esps/fea.h>
-#include <esps/feasd.h>
-#include <esps/anafea.h>
-#include <esps/window.h>
-#include <esps/ana_methods.h>
+#include <espsfree/unix.h>
+#include <espsfree/esps.h>
+#include <espsfree/fea.h>
+#include <espsfree/feasd.h>
+#include <espsfree/anafea.h>
+#include <espsfree/window.h>
+#include <espsfree/ana_methods.h>
 
 /*** User defines go here. ***/
 
