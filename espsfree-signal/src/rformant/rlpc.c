@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include<stdlib.h>
 #include <math.h>
-#include "clapack.h"
+//#include "clapack.h"
 #include "rlpc.h"
 
 #define DATMAX 8820
