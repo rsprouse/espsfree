@@ -12,3 +12,5 @@ install: $(PROGNAME)
 	cp -f $(PROGNAME) $(BINDIR)/$(PROGNAME)
 	chmod $(PROGMOD) $(BINDIR)/$(PROGNAME)
 
+clean: $(PROGNAME)
+	rm -f $(BINDIR)/$(PROGNAME)

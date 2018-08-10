@@ -3,3 +3,6 @@ all:
 
 install:
 	(cd src; emake install)
+
+clean:
+	(cd src; emake clean)

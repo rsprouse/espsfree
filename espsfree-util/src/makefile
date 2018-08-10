@@ -5,20 +5,23 @@ subdirs := bhd btosps copysps fea_deriv feafunc get_esps_base \
            getparam hditem mergefea misc nodiff pplain psps stats testsd \
            tofeasd
 
-isubdirs := bhd btosps copysps fea_deriv feafunc get_esps_base \
-           getparam hditem mergefea misc nodiff pplain psps stats testsd \
-           tofeasd wav2sd
-
 .PHONY: all $(subdirs)
-
 all: $(subdirs)
 
+.PHONY: $(subdirs)
 $(subdirs):
 	$(MAKE) -C $@
 
-.PHONY: install $(isubdirs)
+.PHONY: install
+install: $(subdirs)
+	for prog in $(subdirs); do \
+		$(MAKE) -C $$prog install; \
+	done
 
-install: $(isubdirs)
+.PHONY: clean
+clean:
+	for prog in $(subdirs); do \
+		$(MAKE) -C $$prog clean; \
+	done
 
-$(isubdirs):
-	$(MAKE) -C $@ install
+

@@ -14,22 +14,22 @@ subdirs := acf addsd cb_filt cbkd cbkedit cepanal classify dtw ebanner epochs \
            sgram spectrans transpec vq vqclassify vqdst win_filt \
            wmse_filt zcross zero_pad
 
-isubdirs := acf addsd cb_filt cbkd cbkedit cepanal classify dtw ebanner epochs \
-           fft filter2 filtspec find_ep get_f0 formant get_resid iir_filt \
-           lpcana melspec notch_filt pkmc_filt refcof rem_dc rformant \
-           sgram spectrans transpec vq vqclassify vqdst win_filt \
-           wmse_filt zcross zero_pad
-
 .PHONY: all $(subdirs)
-
 all: $(subdirs)
 
 $(subdirs):
 	$(MAKE) -C $@
 
-.PHONY: install $(isubdirs)
+.PHONY: install
+install: $(subdirs)
+	for prog in $(subdirs); do \
+		$(MAKE) -C $$prog install; \
+	done
 
-install: $(isubdirs)
+.PHONY: clean
+clean:
+	for prog in $(subdirs); do \
+		$(MAKE) -C $$prog clean; \
+	done
 
-$(isubdirs):
-	$(MAKE) -C $@ install
+

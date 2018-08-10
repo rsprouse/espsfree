@@ -3,3 +3,6 @@ all:
 
 install:
 	emake -C src install
+
+clean:
+	emake -C src clean
