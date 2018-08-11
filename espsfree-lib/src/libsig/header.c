@@ -1340,7 +1340,7 @@ astrpr(str, size, argp)
       return 0;
    strcpy(*str, argp->name);
    p = *str + strlen(*str);
-   sprintf(p, " %s\n", *((char **) argp->dest));	/* append a newline */
+   sprintf(p, " %p\n", *((char **) argp->dest));	/* append a newline */
    return (strlen(*str));	/* null NOT included in length */
 }
 
