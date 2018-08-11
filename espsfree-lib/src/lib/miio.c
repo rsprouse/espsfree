@@ -722,7 +722,8 @@ FILE *fp;
 	if (n == 0) return(0);
 	if (flag == NO && (mach == SUN386i_CODE || mach == DS3100_CODE || mach == LINUX_OR_MAC_CODE))
 	/* no need to translate */
-		return (fread((char *)ptr, sizeof(*ptr), n, fp));
+		return (fread((char *)ptr, 4, n, fp));
+		//return (fread((char *)ptr, sizeof(*ptr), n, fp));
 /* 
  translate a file from DEC ALPHA native format
 */
@@ -1021,7 +1022,8 @@ FILE *fp;
 
 	if (n == 0) return(0);
 	if (flag == NO)	/* no need to translate */
-		return (fwrite((char *)ptr, sizeof(*ptr), n, fp));
+		return (fwrite((char *)ptr, 4, n, fp));
+		//return (fwrite((char *)ptr, sizeof(*ptr), n, fp));
 	else { 		/* translate from EDR */
 	 while (n--) {
 		u2.l_val = *ptr++;
