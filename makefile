@@ -1,7 +1,11 @@
 all:
 	(cd espsfree-dev; emake)
 	(cd espsfree-lib; emake)
-	(cd espsfree-util; emake; emake install)
+	(cd espsfree-util; emake)
+	(cd espsfree-signal; emake)
+
+install:
+	(cd espsfree-util; emake install)
 	(cd espsfree-signal; emake install)
 	-ln -s $(SPSDIR)/bin/* $(LOCALBINDIR)/
 

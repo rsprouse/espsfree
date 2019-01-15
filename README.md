@@ -17,8 +17,19 @@ The original esps source code has been reorganized as follows:
 
 - espsfree-dev: Files that are required for compiling ESPS from source.
 - espsfree-lib: Source code for the ESPS libraries.
-- espsfree-signal: Source code for signal processing and speech-related commands (e.g. formant, fft, get_f0).
+- espsfree-signal: Source code for signal processing and speech-related commands (e.g. formant, fft, get\_f0).
 - espsfree-util: Source code for utility commands (e.g. bhd, hditem, pplain).
 
 The `debian` subdirectories of each contain information for creating Debian
-packages.
+packages. Debian packaging is incomplete and does not install correctly.
+
+On the Berkeley Phonetics Machine, installation can be accomplished with:
+
+```bash
+git clone https://github.com/rsprouse/espsfree
+cd espsfree
+sudo cp `pwd`/espsfree-dev/emake.bpm /usr/local/bin/emake
+sudo emake
+sudo emake install
+```
+
