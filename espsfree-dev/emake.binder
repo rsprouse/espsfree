@@ -1,8 +1,8 @@
 #! /bin/sh
 # VERSION 1.0
-BUILDSPS=~/build/esps
+BUILDSPS=$HOME/build/esps
 exec make \
-LOCALBINDIR=/usr/local/bin \
+LOCALBINDIR=$HOME/.local/bin \
 SPSDIR=$BUILDSPS \
 BINDIR=$BUILDSPS/bin \
 MANDIR=$BUILDSPS/man \
