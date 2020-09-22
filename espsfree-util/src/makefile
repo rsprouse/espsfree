@@ -1,7 +1,7 @@
 
 MAKE = emake
 #fea2esig 
-subdirs := bhd btosps copysps fea_deriv feafunc get_esps_base \
+subdirs := bhd btosps copysd copysps fea_deriv feafunc get_esps_base \
            getparam hditem mergefea misc nodiff pplain psps stats testsd \
            tofeasd
 
