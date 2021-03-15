@@ -51,6 +51,11 @@ static double *getlimit();
 static int setlimit();
 static char **choice_list = NULL;
 static char **get_choice();
+static set_choice(struct cnode *v);
+static bad_decl(char *name);
+static struct cnode * ccons(char *v, struct cnode *list);
+static struct inode *icons(int v,struct inode *list);
+static struct fnode *fcons(double v, struct fnode *list);
 char *savestring();
 
 %}
