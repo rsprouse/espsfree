@@ -363,6 +363,7 @@ extern int print_x(), print_y(), print_spect_y();
 extern int plot_spectrogram(), plot_spect_cursors();
 extern int plot_cursors(), plot_markers(), plot_reticles();
 extern Header *get_header();
+extern Header *dup_header();
 #if defined(FOR_SUNVIEW) || defined(FOR_XVIEW)
 extern Notify_value kill_signal_view();/*SUNVIEW*/
 #endif
