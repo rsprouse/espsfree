@@ -14,3 +14,6 @@ clean:
 	(cd espsfree-lib; emake clean)
 	(cd espsfree-util; emake clean)
 	(cd espsfree-signal; emake clean)
+
+clean_links:
+	-for f in $(ls $(SPSDIR)/bin/); do echo rm $(LOCALBINDIR)/${f}; done
