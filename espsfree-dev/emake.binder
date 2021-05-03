@@ -2,6 +2,7 @@
 # VERSION 1.0
 BUILDSPS=$HOME/build/esps
 exec make \
+LDEMULATION=elf_i386 \
 LOCALBINDIR=$HOME/.local/bin \
 SPSDIR=$BUILDSPS \
 BINDIR=$BUILDSPS/bin \

@@ -7,6 +7,7 @@ BUILDSPS=/usr/local/esps
 CROSSFLAGS="-m32 -L/lib32 -L/usr/lib32"
 exec make \
 LDEMULATION=elf_i386 \
+LOCALBINDIR=/usr/local/bin \
 SPSDIR=$BUILDSPS \
 BINDIR=$BUILDSPS/bin \
 MANDIR=$BUILDSPS/man \
