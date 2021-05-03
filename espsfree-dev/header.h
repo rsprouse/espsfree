@@ -25,7 +25,6 @@ extern "C" {
 #endif
 
 #include <stdio.h>
-#include <stdint.h>
 #include <espsfree/esps.h>
 
 /*
@@ -66,22 +65,22 @@ struct header {
 #ifndef NOPAD
     short	pad1;	/**/
 #endif
-    int32_t	check;			/* check field  */
+    long	check;			/* check field  */
     char	date[DATESIZE];		/* file creation date */
     char	hdvers[VERSIONSIZE];	/* header version */
     char	prog[PROGSIZE];		/* program name */
     char	vers[VERSIONSIZE];	/* prog version */
     char	progdate[DATESIZE];	/* prog compile date */
-    int32_t	ndrec;			/* number of data records */
+    long	ndrec;			/* number of data records */
     short	tag;			/* YES if data has tag */
     short	nd1;			/* used for reading old files only */
-    int32_t	ndouble;		/* number of doubles */
-    int32_t	nfloat;			/* number of floats */
-    int32_t	nlong;			/* number of longs */
-    int32_t	nshort;			/* number of shorts */
-    int32_t	nchar;			/* number of chars */
-    int32_t	fixpartsiz;		/* fixed header size */
-    int32_t	hsize;			/* total header size */
+    long	ndouble;		/* number of doubles */
+    long	nfloat;			/* number of floats */
+    long	nlong;			/* number of longs */
+    long	nshort;			/* number of shorts */
+    long	nchar;			/* number of chars */
+    long	fixpartsiz;		/* fixed header size */
+    long	hsize;			/* total header size */
     char	user[USERSIZ];		/* user name */
     short	edr;			/* YES if EDR_ESPS, NO for native */
     short	machine_code;		/* machine that produced file */
@@ -160,8 +159,8 @@ struct sd_header {
 #ifndef NOPAD
    short	pad3;  /**/
 #endif
-   int32_t		start;		/* starting point processed */
-   int32_t		nan;		/* number of points processed */
+   long		start;		/* starting point processed */
+   long		nan;		/* number of points processed */
    short	spares[SD_SPARES];/* spares */
    struct zfunc	*prefilter;	/* prefilter */
    struct zfunc *de_emp;	/* deemphasis filter */
@@ -171,8 +170,8 @@ struct sd_header {
 #define SPEC_SPARES 20
 
 struct spec_header {
-   int32_t		start;		/* starting point analyzed */
-   int32_t		nan;		/* number of points analyzed */
+   long		start;		/* starting point analyzed */
+   long		nan;		/* number of points analyzed */
    short	frmlen;		/* analysis window width */
    short	order_vcd;	/* model order voiced */
    short	order_unvcd;	/* model order unvoiced */
@@ -189,7 +188,7 @@ struct spec_header {
    short	freq_format;	/* how to determine the set of frequencies */
    short	spec_type;	/* are data power, log power, complex, etc. */
    short	contin;		/* discrete distribution or continuous density */
-   int32_t 	num_freqs;	/* number of frequencies */
+   long 	num_freqs;	/* number of frequencies */
    short	spares[SPEC_SPARES];/* spares */
    float	*freqs;		/* frequencies (if listed in header) */
    struct	zfunc *pre_emp;	/* preemphasis filter */
@@ -223,7 +222,7 @@ struct	filt_header {
 #define SCBK_SPARES 20
 
 struct  scbk_header {
-   int32_t		num_items;	/* number of items processed */
+   long		num_items;	/* number of items processed */
    short	distortion;	/* distortion measure used */
    unsigned short num_cdwds;	/* number of codeswords */
    float	convergence;	/* convergence threshold */
@@ -245,26 +244,26 @@ struct fea_header {
 				   on file, instead of by data type (default)*/
 #endif
    char 	**names;	/* name of each field */
-   int32_t		*sizes;		/* total number of items in field */
+   long		*sizes;		/* total number of items in field */
    short 	*ranks;		/* number of dimensions in field */
-   int32_t		**dimens;	/* array dimensions for field */
+   long		**dimens;	/* array dimensions for field */
    short 	*types;		/* type of field */
    char 	***enums;	/* arrays of values for coded types */
-   int32_t		*starts;	/* starting point for this field */
+   long		*starts;	/* starting point for this field */
    short 	*derived;	/* indicates whether field was derived */
    char		***srcfields;	/* for derived fields, 
 				   array of source field names */
    short	spares[FEA_SPARES]; /* spares */
-   int32_t		ndouble;	/* number of doubles in feature record */
-   int32_t		ndcplx;		/* number of double complex in feature record */
-   int32_t		nfloat;		/* number of floats in feature record */
-   int32_t		nfcplx;		/* number of float complex in feature record */
-   int32_t		nlong;		/* number of longs in feature record */
-   int32_t		nlcplx;		/* number of long complex in feature record */
-   int32_t		nshort;		/* number of shorts in feature record */
-   int32_t		nscplx;		/* number of short complex in feature record */
-   int32_t		nbyte;		/* number of bytes in feature record */
-   int32_t		nbcplx;		/* number of byte complex in feature record */
+   long		ndouble;	/* number of doubles in feature record */
+   long		ndcplx;		/* number of double complex in feature record */
+   long		nfloat;		/* number of floats in feature record */
+   long		nfcplx;		/* number of float complex in feature record */
+   long		nlong;		/* number of longs in feature record */
+   long		nlcplx;		/* number of long complex in feature record */
+   long		nshort;		/* number of shorts in feature record */
+   long		nscplx;		/* number of short complex in feature record */
+   long		nbyte;		/* number of bytes in feature record */
+   long		nbcplx;		/* number of byte complex in feature record */
 };
 
 /* symbol table for generic header items 
@@ -291,14 +290,14 @@ struct gen_hd {
 
 struct preamble {
 #ifndef DEC_ALPHA
-   int32_t		machine_code;	/* defined below */
-   int32_t		check_code;	/* version check code */
-   int32_t		data_offset;	/* data offset (in bytes, from 0) in file */
-   int32_t		record_size;	/* record size in bytes */
-   int32_t		check;		/* ESPS check number, same as main header */
-   int32_t		edr;		/* YES if EDR_ESPS, NO if native */
-   int32_t		align_pad_size; /* alignment pad need for some SD files */
-   int32_t		foreign_hd; 	/* pointer to foreign header, -1 if */
+   long		machine_code;	/* defined below */
+   long		check_code;	/* version check code */
+   long		data_offset;	/* data offset (in bytes, from 0) in file */
+   long		record_size;	/* record size in bytes */
+   long		check;		/* ESPS check number, same as main header */
+   long		edr;		/* YES if EDR_ESPS, NO if native */
+   long		align_pad_size; /* alignment pad need for some SD files */
+   long		foreign_hd; 	/* pointer to foreign header, -1 if */
 #else
    int		machine_code;	/* defined below */
    int		check_code;	/* version check code */

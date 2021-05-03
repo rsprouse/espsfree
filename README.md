@@ -33,3 +33,10 @@ sudo emake
 sudo emake install
 ```
 
+Support for 32-bit compiling might not be installed on all versions of the
+BPM. To add 32-bit support do:
+
+```bash
+sudo apt-get update
+sudo apt-get install gcc-multilib
+```
