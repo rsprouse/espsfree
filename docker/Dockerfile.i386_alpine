@@ -1,0 +1,61 @@
+# Multi-stage build for ESPS, see
+# https://docs.docker.com/develop/develop-images/multistage-build/
+FROM i386/alpine:3.13.4 as alpine_builder
+RUN apk update && apk add --no-cache \
+    build-base \
+    bison \
+    flex \
+    wget
+
+FROM alpine_builder as esps_alpine_builder
+
+# When running esps utilities on files located on a mounted Docker
+# volume, these lines in espsfree-lib/src/lib_header/headers.c cause
+# the 'nrec:' error (lines 3149-3153):
+
+#     if (fstat(fd, &buf) < 0)
+#     {
+# 	Fprintf(stderr, "nrec: can't get file size.\n");
+# 	exit(1);
+#     }
+
+# If the file is located within the container itself rather than on
+# a mounted volume the utilities work fine.
+#
+# One workaround is to remove the check with this perl one liner:
+
+# perl -pi.bak -e "BEGIN {undef $/;} s#( +if \(fstat\(fd, &buf\) < 0\)\R +{\R\s+Fprintf\(stderr, \"nrec: can't get file size.\\\n\"\);\R\s+exit\(1\);\R\s+})#/*\n\1 \n*/#smg" espsfree-lib/src/lib_header/headers.c && \
+ 
+# But that seems unsafe. Some discussion in
+# https://stackoverflow.com/questions/13893580/calling-stat-from-sys-stat-h-faills-with-value-too-large-for-defined-data-typ/13893581 and
+# https://github.com/rmyorston/busybox-w32/issues/167
+# suggests that there might be a mixing of 64-bit and 32-bit layers
+# when running in Docker (the program is compiled with 32-bit
+# compatibility in the container, but the mounted filesystem is on
+# a 64-bit host). The solution is to set _FILE_OFFSET_BITS=64
+# when compiling.
+
+RUN wget https://github.com/rsprouse/espsfree/archive/refs/heads/master.zip && \
+    unzip master.zip && \
+    cd espsfree-master && \
+    cp espsfree-dev/emake.docker.i386_alpine /usr/local/bin/emake && \
+    emake && \
+    emake install && \
+    cp /usr/local/bin/emake /usr/local/esps/bin/emake && \
+    gzip -f /usr/local/esps/man/man1/*.1 && \
+    rm -rf /usr/local/esps/bin/old
+
+# Create a production image that does not have build tools and build artifacts.
+# This is the image that should be shared in order to distribute the esps
+# utilities.
+FROM i386/alpine:3.13.4
+COPY --from=esps_alpine_builder /usr/local/esps /usr/local/esps
+RUN apk update && apk add --no-cache \
+    less \
+    mandoc \
+    && \
+    mv /usr/local/esps/bin/* /usr/local/bin && \
+    mv /usr/local/esps/lib/* /usr/local/lib && \
+    mv /usr/local/esps/man/man1 /usr/share/man && \
+    rm -rf /tmp/* /var/tmp/* /usr/local/esps
+ENV PAGER less

@@ -1,0 +1,73 @@
+# Multi-stage build for ESPS, see
+# https://docs.docker.com/develop/develop-images/multistage-build/
+FROM ubuntu:20.04 as ubuntu_builder
+RUN apt-get update && apt-get install -qq -y \
+    build-essential \
+    bison \
+    flex \
+    gcc-multilib \
+    git \
+    vim \
+    wget
+
+FROM ubuntu_builder as esps_ubuntu_builder
+
+# When running esps utilities on files located on a mounted Docker
+# volume, these lines in espsfree-lib/src/lib_header/headers.c cause
+# the 'nrec:' error (lines 3149-3153):
+
+#     if (fstat(fd, &buf) < 0)
+#     {
+# 	Fprintf(stderr, "nrec: can't get file size.\n");
+# 	exit(1);
+#     }
+
+# If the file is located within the container itself rather than on
+# a mounted volume the utilities work fine.
+#
+# One workaround is to remove the check with this perl one liner:
+
+# perl -pi.bak -e "BEGIN {undef $/;} s#( +if \(fstat\(fd, &buf\) < 0\)\R +{\R\s+Fprintf\(stderr, \"nrec: can't get file size.\\\n\"\);\R\s+exit\(1\);\R\s+})#/*\n\1 \n*/#smg" espsfree-lib/src/lib_header/headers.c && \
+ 
+# But that seems unsafe. Some discussion in
+# https://stackoverflow.com/questions/13893580/calling-stat-from-sys-stat-h-faills-with-value-too-large-for-defined-data-typ/13893581 and
+# https://github.com/rmyorston/busybox-w32/issues/167
+# suggests that there might be a mixing of 64-bit and 32-bit layers
+# when running in Docker (the program is compiled with 32-bit
+# compatibility in the container, but the mounted filesystem is on
+# a 64-bit host). The solution is to set _FILE_OFFSET_BITS=64
+# when compiling.
+
+# Perhaps this setting would be useful to add to emake for compilation
+# in non-Docker environments as well.
+
+RUN git clone https://github.com/rsprouse/espsfree && \
+    cd espsfree && \
+    cp espsfree-dev/emake.docker.ubuntu /usr/local/bin/emake && \
+    emake && \
+    emake install && \
+    cp /usr/local/bin/emake /usr/local/esps/bin/emake && \
+    rm -rf /usr/local/esps/bin/old
+
+# Create a production image that does not have build tools and build artifacts.
+# This is the image that should be shared in order to distribute the esps
+# utilities.
+FROM ubuntu:20.04
+ENV LANG C.UTF-8
+ENV DEBIAN_FRONTEND noninteractive
+COPY --from=esps_ubuntu_builder /usr/local/esps /usr/local/esps
+RUN apt-get update && apt-get install -qq -y \
+    libc6-i386 \
+    man-db \
+    && \
+    apt-get clean && \
+    for f in `ls /usr/local/esps/bin`; do ln -s /usr/local/esps/bin/${f} /usr/local/bin; done && \
+    mv /usr/local/esps/bin/* /usr/local/bin && \
+    mv /usr/local/esps/include/* /usr/local/include && \
+    mv /usr/local/esps/lib/* /usr/local/lib && \
+    mv /usr/local/esps/man/man1 /usr/local/share/man && \
+    gzip -f /usr/local/share/man/man1/*.1 && \
+    mandb && \
+    rm /usr/bin/man && \
+    mv /usr/bin/man.REAL /usr/bin/man && \
+    rm -rf /tmp/* /var/tmp/* /var/lib/apt/archive/* /var/lib/apt/lists/* /usr/local/esps
