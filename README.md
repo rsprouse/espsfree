@@ -30,7 +30,7 @@ packages. Debian packaging is incomplete and does not install correctly.
 The simplest way to use the ESPS utilities is to pull a Docker container that
 contains precompiled executables. You must first install
 [Docker](https://www.docker.com/), then pull one of the images from the
-[UC Berkeley Linguistics repository]((https://gallery.ecr.aws/w5x7g6y7/esps).
+[UC Berkeley Linguistics repository](https://gallery.ecr.aws/w5x7g6y7/esps).
 The Alpine Linux image is smaller and is a 32-bit native system. The Ubuntu
 Linux image is a larger 64-bit system. For most users the Alpine image is
 recommended for its smaller size.
@@ -67,7 +67,7 @@ singularity pull docker://public.ecr.aws/w5x7g6y7/esps:ubuntu64
 You may also compile the utilities yourself on Linux systems. You should be
 aware that compiling requires 32-bit compatibility support on 64-bit systems,
 and you will need to set compile-time variables appropriate to your
-environment. Consult the `emake*` files in `espsfree-dev` for sample
+environment. Consult the `emake*` files in [`espsfree-dev`](espsfree-dev) for sample
 configurations and make adjustments. The codebase is rather old C code, and
 can be challenging to compile.
 
@@ -127,11 +127,11 @@ being emitted when the image platform does not match the host platform.
 Most host platforms will not match the `i386_alpine` image, so
 `--platform linux/386` is included in the `i386_alpine` example shown above.
 
-### Getting documentation for the ESPS utilities
-
 The remaining examples assume the `esps:i386_alpine` image. Remove
 `--platform linux/386` and replace the image tag with `esps:ubuntu64` if that is
 your image.
+
+### Getting documentation for the ESPS utilities
 
 To see the manual page for any of the utilities run `man <utility>`, e.g. for
 `get_f0`:
@@ -157,7 +157,7 @@ will need to process files that are on your computer and that are not in the
 container image itself. In order to do this you must map a data directory on
 your computer to a path inside the container. You do this with the `-v` option,
 where you provide a mapping of a local path to a path inside the container,
-separated by `:`:
+separated by '`:`':
 
 ```bash
 docker run --rm --platform linux/386 -v /path/to/datadir:/data esps:i386_alpine get_f0 /data/infile.wav /data/infile.f0
@@ -182,8 +182,14 @@ alias get_f0="docker run --rm --platform linux/386 -v /path/to/datadir:/data esp
 get_f0 /data/this_is_a_label_file.wav /data/out.f0
 ```
 
-For scripts you should not use aliases, as the explicit form will make your
-work more reproducible.
+For scripts you should not use aliases, as the explicit unaliased form will make
+your work more reproducible.
+
+### A note on persistence
+
+Some ESPS utilities maintain settings between invocations when run on a normal
+interactive system. Since the examples above remove Docker containers after
+every invocation this kind of persistence will not occur.
 
 ### Running interactively
 
@@ -192,21 +198,16 @@ an interactive session inside the container like this:
 
 ```bash
 # Start a shell inside the container
-docker run --rm -it -v `pwd`:/data esps:ubuntu64 /bin/bash
+docker run --rm -it -v /path/to/datadir:/data esps:ubuntu64 /bin/bash
 
 # Run a series of commands within the container here.
+...
 
 # Exit the container
 exit
 ```
 
 See the Docker documentation for more on running interactive sessions.
-
-### A note on persistence
-
-Some ESPS utilities maintain settings between invocations when run on a normal
-interactive system. Since the examples above remove Docker containers after
-every invocation this kind of persistence will not occur.
 
 ## Running with Singularity
 
@@ -223,7 +224,7 @@ are identified by the path to the `.sif` file.
 singularity run ./esps_i386_alpine.sif ls /usr/local/bin
 ```
 
-In the example above the `.sif` file is in the current directory `.`.
+In the example above the `.sif` file is in the current directory '`.`'.
 
 ### Getting documentation for the ESPS utilities
 
