@@ -30,7 +30,7 @@ packages. Debian packaging is incomplete and does not install correctly.
 The simplest way to use the ESPS utilities is to pull a Docker container that
 contains precompiled executables. You must first install
 [Docker](https://www.docker.com/), then pull one of the images from the
-[UC Berkeley Linguistics repository](https://gallery.ecr.aws/w5x7g6y7/esps).
+[UC Berkeley Linguistics repository](https://gallery.ecr.aws/ucblx/esps).
 The Alpine Linux image is smaller and is a 32-bit native system. The Ubuntu
 Linux image is a larger 64-bit system. For most users the Alpine image is
 recommended for its smaller size.
@@ -39,10 +39,10 @@ To pull an image:
 
 ```bash
 # Pull the alpine image.
-docker pull public.ecr.aws/w5x7g6y7/esps:i386_alpine
+docker pull public.ecr.aws/ucblx/esps:i386_alpine
 
 # Pull the Ubuntu image.
-docker pull public.ecr.aws/w5x7g6y7/esps:ubuntu64
+docker pull public.ecr.aws/ucblx/esps:ubuntu64
 ```
 
 See the [`docker` directory](docker) if you are interested in creating Docker
@@ -56,10 +56,10 @@ prefixing `docker://` to the repository:
 
 ```bash
 # Pull the alpine image.
-singularity pull docker://public.ecr.aws/w5x7g6y7/esps:i386_alpine
+singularity pull docker://public.ecr.aws/ucblx/esps:i386_alpine
 
 # Pull the Ubuntu image.
-singularity pull docker://public.ecr.aws/w5x7g6y7/esps:ubuntu64
+singularity pull docker://public.ecr.aws/ucblx/esps:ubuntu64
 ```
 
 ## Compiling and installing on Linux
@@ -112,10 +112,10 @@ Docker users can view the available ESPS utilities with one of:
 
 ```bash
 # Alpine image
-docker run --rm --platform linux/386 esps:i386_alpine ls /usr/local/bin
+docker run --rm --platform linux/386 public.ecr.aws/ucblx/esps:i386_alpine ls /usr/local/bin
 
 # Ubuntu image
-docker run --rm esps:ubuntu64 ls /usr/local/bin
+docker run --rm public.ecr.aws/ucblx/esps:ubuntu64 ls /usr/local/bin
 ```
 
 Every time `docker run` is invoked on an image a new container is created, and
@@ -137,7 +137,7 @@ To see the manual page for any of the utilities run `man <utility>`, e.g. for
 `get_f0`:
 
 ```bash
-docker run --rm --platform linux/386 esps:i386_alpine man get_f0
+docker run --rm --platform linux/386 public.ecr.aws/ucblx/esps:i386_alpine man get_f0
 ```
 
 ### Processing files with the ESPS utilities
@@ -145,7 +145,7 @@ docker run --rm --platform linux/386 esps:i386_alpine man get_f0
 The general form of an ESPS command is:
 
 ```bash
-docker run --rm --platform linux/386 esps:i386_alpine esps_cmd [OPTIONS] ARGS
+docker run --rm --platform linux/386 public.ecr.aws/ucblx/esps:i386_alpine esps_cmd [OPTIONS] ARGS
 ```
 
 Where `[OPTIONS]` are option values described in the manual page and
@@ -160,7 +160,7 @@ where you provide a mapping of a local path to a path inside the container,
 separated by '`:`':
 
 ```bash
-docker run --rm --platform linux/386 -v /path/to/datadir:/data esps:i386_alpine get_f0 /data/infile.wav /data/infile.f0
+docker run --rm --platform linux/386 -v /path/to/datadir:/data public.ecr.aws/ucblx/esps:i386_alpine get_f0 /data/infile.wav /data/infile.f0
 ```
 
 The above command maps the local directory `/path/to/datadir` on the host
@@ -176,7 +176,7 @@ it convenient to create an alias if your shell supports it (linux, mac):
 
 ```bash
 # Create alias that includes volume mapping and image and command names:
-alias get_f0="docker run --rm --platform linux/386 -v /path/to/datadir:/data esps:i386_alpine get_f0"
+alias get_f0="docker run --rm --platform linux/386 -v /path/to/datadir:/data public.ecr.aws/ucblx/esps:i386_alpine get_f0"
 
 # Then run with:
 get_f0 /data/this_is_a_label_file.wav /data/out.f0
@@ -198,7 +198,7 @@ an interactive session inside the container like this:
 
 ```bash
 # Start a shell inside the container
-docker run --rm -it -v /path/to/datadir:/data esps:ubuntu64 /bin/bash
+docker run --rm -it -v /path/to/datadir:/data public.ecr.aws/ucblx/esps:ubuntu64 /bin/bash
 
 # Run a series of commands within the container here.
 ...
